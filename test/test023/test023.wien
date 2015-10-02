@@ -1,0 +1,70 @@
+general
+ lattice P
+ equiv list Cr 1
+   0.0 0.0 0.0
+ end equiv list
+ equiv list Cr 2
+   0.5 0.5 0.5
+ end equiv list
+ cell parameters 5.7210 5.7210 5.7210 90 90 90
+ npt * 781
+ r0 * 0.0001
+ mix 0.40
+ gmax 15.0
+ lmax 10
+ lnsmax 4
+ 
+ rmt * 1.85
+ kpts 5000
+ rkmax 8.0
+ spinpolarized yes  
+end general
+initialization 
+ ecoreval -6.0
+ lm list 1 
+  0 0  4 0  4 4  6 0  6 4  8 0  8 4  8 8 10 0 10 4 10 8
+ end lm list
+ lm list 2 
+  0 0  4 0  4 4  6 0  6 4  8 0  8 4  8 8 10 0 10 4 10 8
+ end lm list
+ orbitals 1 0.2 0
+  0    0.563     0.000 CONT 0 
+  0   -4.392     0.002 STOP 0 
+  1    0.716     0.000 CONT 0 
+  1   -2.285     0.002 CONT 0 
+  2    0.535     0.000 CONT 1 
+ end orbitals
+ orbitals 2 0.2 0
+  0    0.563     0.000 CONT 0 
+  0   -4.392     0.002 STOP 0 
+  1    0.716     0.000 CONT 0 
+  1   -2.285     0.002 CONT 0 
+  2    0.535     0.000 CONT 1 
+ end orbitals
+end initialization
+prescf default
+scf 
+ max iterations 100
+ energy conv 0.0001
+ itdiag
+end scf
+printrho
+ zmax 2.0
+end printrho
+dosplot default
+bandplot default
+kdos
+ kdos 1
+end kdos
+rxplot default
+critic
+ iws 3
+ newton 1e-15
+ grdvec
+  files test023
+  plane 0 0 0 1 0 0 0 1 0
+  rbcpall 2 2 2 2
+  lap atan 101 101 61
+ end grdvec
+end critic
+synopsis default

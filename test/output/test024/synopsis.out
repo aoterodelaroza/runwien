@@ -1,0 +1,92 @@
+General information
+---------------------------------------------------------------------
+title   : As, Wyckoff (2nd), COD
+root    : test024
+pwd     : /home/alberto/cvs/runwien/test/test024
+machine : neon.quimica.uniovi.es
+date    : mié oct  8 09:11:12 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 2
+prescf section run, time (s) = 2
+scf section run, time (s) = 147
+critic section run, time (s) = 8
+total run time (s) = 159
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : As1
+Mol. mass    : 74.921600
+a / bohr     : 7.10842000
+b / bohr     : 7.10842000
+c / bohr     : 19.92195000
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 120.00000000
+c/a          : 2.80258482
+c/b          : 2.80258482
+b/a          : 1.00000000
+volume/bohr^3: 871.78348539
+Mol. volume  : 435.89174269
+space group  : R-3m
+lattice      : R
+system       : hexagonal
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is As mult= 2 x= 0.22600000 y= 0.22600000 z= 0.22600000 sym= 3m1
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 66
+Valence electrons in unit cell   : 30
+Core electrons in unit cell      : 36
+Core | val | total e- for atom   : [As] 18 | 15 | 33
+Core | val el. conf. for atom    : [As] 1S(2)2S(2)2P(6)3S(2)3P(6) | 3D(10)4S(2)4P(3)
+Core leaking (e-) for atom 1 : [As] 1.87000e-04
+Atomic energy (lstart) [As]      : -4521.9809130
+Total in vacuo energy (lstart)   : -4521.9809130
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : no
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, rmt (atom 1)       : 2.35000
+general, r0  (atom 1)       : 0.00010000
+general, rkmax              : 7.00000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 12.000
+general, mix                : 0.20000
+general, kpts               : 1000
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 100 -cc 0.000100 -ec 0.000010
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -4522.1862805000
+E fermi /ry = 0.46342
+Warnings :  (5)
+Planarity   = 0.055641
+Morse sum   = 0
+Topology    = 1[2](0)|2[3,3]|2[1,6]|2[1,2]
+
+
+(5) Ghost bands.
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - criticsummary.out
+ - synopsis.out
+* .index files
+ - test024.index
+* .ps files
+* .gnuplot files
+

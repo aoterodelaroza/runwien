@@ -1,0 +1,55 @@
+general
+  lattice H
+  equiv list Mg
+    0.66666667 0.33333333 0.75000000
+    0.33333333 0.66666667 0.25000000
+  end equiv list
+  cell parameters 6.74476748 6.74476748 10.3811660 90 90 120
+  relativistic yes
+  link lmax lnsmax
+  npt *   781
+  r0  *   0.0001
+  rmt *   auto
+  mix     0.40
+  gmax    20.0
+  lmax    10
+  lnsmax  4
+  rkmax   8.0
+  kpts    7500
+end general
+initialization
+  xcpotential ggapbe96
+end initialization
+prescf default
+scf
+  new in1 3
+  max iterations 30
+  energy conv 0.00001
+  itdiag 4
+end  scf
+dosplot
+  in1maxenergy 3.0
+  plotunits ry
+  plotxmin -0.5
+  plotxmax *
+  dos list
+   0 1 total
+   1 1 mg,total
+   1 2 mg,s
+   1 3 mg,p
+   1 4 mg,pz
+   1 5 mg,px+py
+   1 6 mg,d
+   1 7 mg,dz2
+   1 8 mg,dx2y2+dxy
+   1 9 mg,dxz+dyz
+   1 10 mg,f
+   2 1 inter
+  end dos list
+  join 1 2 12
+  join 2 3* 4* 7* 11*
+  join 7 8 9 10
+end dosplot
+synopsis 
+  exhaustive
+end synopsis

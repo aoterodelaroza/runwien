@@ -1,0 +1,148 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test007
+pwd     : /home/alberto/cvs/runwien/test/test007
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 14:38:03 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 1
+initialization section run, time (s) = 1
+prescf section run, time (s) = 12
+scf section run, time (s) = 1684
+printrho section run, time (s) = 2
+total run time (s) = 1700
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Cr1
+Mol. mass    : 51.996100
+a / bohr     : 4.85520300
+b / bohr     : 4.85520300
+c / bohr     : 7.92851300
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 120.00000000
+c/a          : 1.63299310
+c/b          : 1.63299310
+b/a          : 1.00000000
+volume/bohr^3: 161.85911445
+Mol. volume  : 80.92955722
+space group  : P63/mmc
+lattice      : H
+system       : hexagonal
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Cr mult= 2 x= 0.66666667 y= 0.33333333 z= 0.75000000 sym= -6m2
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 48
+Valence electrons in unit cell   : 28
+Core electrons in unit cell      : 20
+Core | val | total e- for atom   : [Cr] 10 | 14 | 24
+Core | val el. conf. for atom    : [Cr] 1S(2)2S(2)2P(6) | 3S(2)3P(6)3D(5)4S(1)
+Core leaking (e-) for atom 1 : [Cr] 0.00000e+00
+Atomic energy (lstart) [Cr]      : -2101.1354990
+Total in vacuo energy (lstart)   : -2101.1354990
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : yes
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, rmt (atom 1)       : 2.41000
+general, r0  (atom 1)       : 0.00010000
+general, rkmax              : 7.50000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 12.000
+general, mix                : 0.10000
+general, kpts               : 7500
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 100 -ec 0.000010 -it 
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -2101.7378155000
+E fermi /ry = 0.68132
+Mag. moment = 0.38313
+Warnings :  (5)
+No critic data available
+
+
+(5) Ghost bands.
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - synopsis.out
+* .index files
+ - test007.index
+* .ps files
+ - test0071/test0071.rhoplot.valrho.ps
+ - test0071/test0071.rhoplot.totalrho.ps
+ - test0071/test0071.rhoplot.vcoul.ps
+ - test0071/test0071.rhoplot.vxc.ps
+ - test0071/test0071.rhoplot.vtotal.ps
+ - test0071/test0071.rhoplot.spin.ps
+ - test0071/test0071.rhoplot.atomic.ps
+ - test0071/test0071.rhoplot.deform.ps
+* .gnuplot files
+ - test0071/test0071.rhoplot.valrho.gnuplot
+ - test0071/test0071.rhoplot.totalrho.gnuplot
+ - test0071/test0071.rhoplot.vcoul.gnuplot
+ - test0071/test0071.rhoplot.vxc.gnuplot
+ - test0071/test0071.rhoplot.vtotal.gnuplot
+ - test0071/test0071.rhoplot.spin.gnuplot
+ - test0071/test0071.rhoplot.atomic.gnuplot
+ - test0071/test0071.rhoplot.deform.gnuplot
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 23.5729961712
+metric matrix (1,2) : -11.7864980856
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 23.5729961712
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 62.8613183912
+complete basis specification for atom 1 : 
+  0.53760000 5    0   
+  0 0.53500   0.00000   CONT 1
+  0 -4.40400  0.00200   CONT 1
+  1 0.67700   0.00000   CONT 1
+  1 -2.29800  0.00000   CONT 1
+  2 0.71800   0.00000   CONT 1
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.72449 6.224  7.450  293    427    26  0.07660  -2.47187 1.78599  
+
+convergence details (DIRB angle) : 
+  ite  1     
+1      0.1   
+2      18.0  
+3      125.8 
+4      18.4  
+5      60.9  
+6      3.6   
+7      28.6  
+8      151.5 
+9      49.0  
+10     56.4  
+11     65.0  
+12     27.9  
+13     38.4  
+14     53.4  
+15     57.9  
+16     54.2  
+17     45.7  
+18     32.1  
+19     139.5 
+20     138.5 

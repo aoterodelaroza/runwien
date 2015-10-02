@@ -1,0 +1,116 @@
+General information
+---------------------------------------------------------------------
+title   : calcium alpha
+root    : test010
+pwd     : /home/alberto/cvs/runwien/test/test010
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 15:08:26 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 1
+prescf section run, time (s) = 1
+scf section run, time (s) = 78
+rxplot section run, time (s) = 34
+total run time (s) = 114
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Ca1
+Mol. mass    : 40.078000
+a / bohr     : 10.53711300
+b / bohr     : 10.53711300
+c / bohr     : 10.53711300
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 90.00000000
+c/a          : 1.00000000
+c/b          : 1.00000000
+b/a          : 1.00000000
+volume/bohr^3: 1169.94356317
+Mol. volume  : 292.48589079
+space group  : Fm-3m
+lattice      : F
+system       : cubic
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Ca mult= 1 x= 0.00000000 y= 0.00000000 z= 0.00000000 sym= m-3m
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 20
+Valence electrons in unit cell   : 10
+Core electrons in unit cell      : 10
+Core | val | total e- for atom   : [Ca] 10 | 10 | 20
+Core | val el. conf. for atom    : [Ca] 1S(2)2S(2)2P(6) | 3S(2)3P(6)4S(2)
+Core leaking (e-) for atom 1 : [Ca] 0.00000e+00
+Atomic energy (lstart) [Ca]      : -1360.6593990
+Total in vacuo energy (lstart)   : -1360.6593990
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : no
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, rmt (atom 1)       : 2.47500
+general, r0  (atom 1)       : 0.00010000
+general, rkmax              : 8.00000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 12.000
+general, mix                : 0.20000
+general, kpts               : 5000
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 30 -ec 0.000010
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -1360.7976750000
+E fermi /ry = 0.19942
+No critic data available
+
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - synopsis.out
+* .index files
+ - test010.index
+* .ps files
+ - test0101/test0101.broad.specplot.ps
+ - test0101/test0101.unbroad.specplot.ps
+* .gnuplot files
+ - test0101/test0101.rxplot.gnuplot
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 111.0307503748
+metric matrix (1,2) : 0.0000000000
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 111.0307503748
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 111.0307503748
+complete basis specification for atom 1 : 
+  0.30000000 4    0   
+  0 0.30000   0.00000   CONT 1
+  0 -3.16000  0.00500   STOP 1
+  1 -1.75000  0.01000   CONT 1
+  1 0.30000   0.00000   CONT 1
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.05428 6.465  7.670  266    165    8   -0.14265 -2.89519 0.90509  
+
+convergence details (DIRB angle) : 
+  ite  1     
+1      0.0   
+2      27.9  
+3      14.5  
+4      43.2  
+5      5.6   

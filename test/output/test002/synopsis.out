@@ -1,0 +1,122 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test002
+pwd     : /home/alberto/cvs/runwien/test/test002
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 13:15:44 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 1
+prescf section run, time (s) = 6
+scf section run, time (s) = 103
+total run time (s) = 110
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Ni1
+Mol. mass    : 58.693400
+a / bohr     : 6.70000000
+b / bohr     : 6.70000000
+c / bohr     : 6.70000000
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 90.00000000
+c/a          : 1.00000000
+c/b          : 1.00000000
+b/a          : 1.00000000
+volume/bohr^3: 300.76300000
+Mol. volume  : 75.19075000
+space group  : Fm-3m
+lattice      : F
+system       : cubic
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Ni mult= 1 x= 0.00000000 y= 0.00000000 z= 0.00000000 sym= m-3m
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 28
+Valence electrons in unit cell   : 16
+Core electrons in unit cell      : 12
+Core | val | total e- for atom   : [Ni] 12 | 16 | 28
+Core | val el. conf. for atom    : [Ni] 1S(2)2S(2)2P(6)3S(2) | 3P(6)3D(8)4S(2)
+Core leaking (e-) for atom 1 : [Ni] 4.22000e-04
+Atomic energy (lstart) [Ni]      : -3041.2443130
+Total in vacuo energy (lstart)   : -3041.2443130
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : yes
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, rmt (atom 1)       : 2.30000
+general, r0  (atom 1)       : 0.00010000
+general, rkmax              : 8.00000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 12.000
+general, mix                : 0.20000
+general, kpts               : 3000
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 30 -cc 0.000100
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -3041.6647990000
+E fermi /ry = 0.53524
+Mag. moment = 0.63013
+Warnings :  (5)
+No critic data available
+
+
+(5) Ghost bands.
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - synopsis.out
+* .index files
+ - test002.index
+* .ps files
+* .gnuplot files
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 44.8900000000
+metric matrix (1,2) : 0.0000000000
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 44.8900000000
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 44.8900000000
+complete basis specification for atom 1 : 
+  0.30000000 4    0   
+  1 0.30000   0.00000   CONT 1
+  1 -4.96000  0.00500   STOP 1
+  2 0.30000   0.01000   CONT 1
+  0 0.30000   0.00000   CONT 1
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.16945 6.957  7.470  81     104    12  -0.17619 -4.17764 1.98855  
+
+convergence details (DIRB angle) : 
+  ite  1     
+1      0.0   
+2      46.1  
+3      37.8  
+4      48.5  
+5      18.9  
+6      55.2  
+7      15.8  
+8      41.2  
+9      46.5  
+10     17.4  
+11     36.2  
+12     25.0  

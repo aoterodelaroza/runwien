@@ -1,0 +1,67 @@
+### first pass
+#
+#general 
+#  lattice H
+#  equiv list Mg
+#    0.66666667 0.33333333 0.75000000
+#    0.33333333 0.66666667 0.25000000
+#  end equiv list
+#  cell parameters  4.064641 4.064641 6.599047 90.0 90.0 120.0
+#  rmt *        1.9
+#  gmax         20.0
+#  rkmax        7.5
+#  kpts         7000
+#end general
+#initialization
+#  xcpotential ggapbe96
+#  ecoreval -7.5
+#  lm list 1 10
+#  orbitals 1 -.07138 0     
+#   0    0.034     0.000 CONT 1 
+#   0   -5.301     0.002 CONT 1 
+#   1    0.134     0.000 CONT 1 
+#   1   -2.857     0.002 CONT 1 
+#  end orbitals
+#end initialization
+#prescf default
+#scf
+#  do none
+#  max iterations 100
+#  energy conv 0.0001
+#  itdiag 4
+#  new in1 3
+#end scf
+#sweep
+#  do none
+#  with v 270/350.1/10
+#  with c/a 1.633
+#  new in1 3
+#  itdiag 4
+#  bandplot
+#  end bandplot
+#  critic
+#    newton 1e-15
+#    iws 3
+#  end critic
+#end sweep
+#synopsis 
+#  output synopsis-firstpass.out
+#  exhaustive
+#end synopsis
+### end first pass
+
+## After finishing the first execution, run runwien.awk on every directory
+## in <root>-sweep/. When you are done, proceed to the second.
+# for i in test020-sweep/test020-sweep*/ ; do
+#   cd $i
+#   runwien.awk *wien >& runwien.out
+#   cd ../..
+# done
+
+### second pass
+#loadcheck reread
+#synopsis
+#  output synopsis-secondpass.out
+#  exhaustive
+#end synopsis
+### end second pass

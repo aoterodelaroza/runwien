@@ -1,0 +1,163 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test016
+pwd     : /home/alberto/cvs/runwien/test/test016
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 19:36:23 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 1
+prescf section run, time (s) = 6
+scf section run, time (s) = 24
+sweep section run, time (s) = 317
+total run time (s) = 348
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Be1
+Mol. mass    : 9.012182
+a / bohr     : 4.32104800
+b / bohr     : 4.32104800
+c / bohr     : 6.77145600
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 120.00000000
+c/a          : 1.56708650
+c/b          : 1.56708650
+b/a          : 1.00000000
+volume/bohr^3: 109.49413924
+Mol. volume  : 54.74706962
+space group  : P63/mmc
+lattice      : H
+system       : hexagonal
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Be mult= 2 x= 0.66666667 y= 0.33333333 z= 0.75000000 sym= -6m2
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 8
+Valence electrons in unit cell   : 8
+Core electrons in unit cell      : 0
+Core | val | total e- for atom   : [Be]  | 4 | 4
+Core | val el. conf. for atom    : [Be]  | 1S(2)2S(2)
+Core leaking (e-) for atom 1 : [Be] 0.00000e+00
+Atomic energy (lstart) [Be]      : -29.2657460
+Total in vacuo energy (lstart)   : -29.2657460
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : no
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, rmt (atom 1)       : 1.90000
+general, r0  (atom 1)       : 0.00010000
+general, rkmax              : 8.00000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 20.000
+general, mix                : 0.40000
+general, kpts               : 500
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -10.000
+initialization, emin / ry   : -13.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 50 -ec 0.000100
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -29.5393845000
+E fermi /ry = 0.50009
+No critic data available
+
+
+
+Structural grid (sweep) results
+---------------------------------------------------------------------
+
+Fixed parameters --
+alpha / deg   : 90
+beta / deg    : 90
+gamma / deg   : 120
+b / a         : 1
+
+Variable parameters --
+number of structures : 12
+ a / bohr b / bohr c / bohr     v/bohr^3    c / a    c / b it. warning    energy / ry    efermi / ry   time /s planarity morsesum                      topology
+ 4.25395  4.25395  6.38093      50.0000  1.50000  1.50000   5      --    -29.5375985    0.549830000        31 0.0000000      n/a                           n/a 
+ 4.16342  4.16342  6.66147      50.0000  1.60000  1.60000   9      --    -29.5383955    0.556360000        28 0.0000000      n/a                           n/a 
+ 4.08013  4.08013  6.93621      50.0000  1.70000  1.70000  13      --    -29.5355020    0.562730000        27 0.0000000      n/a                           n/a 
+ 4.39127  4.39127  6.58691      55.0000  1.50000  1.50000  16      --    -29.5386645    0.491790000        24 0.0000000      n/a                           n/a 
+ 4.29781  4.29781  6.87650      55.0000  1.60000  1.60000  20      --    -29.5390920    0.498960000        27 0.0000000      n/a                           n/a 
+ 4.21183  4.21183  7.16011      55.0000  1.70000  1.70000  24      --    -29.5365460    0.502870000        27 0.0000000      n/a                           n/a 
+ 4.52050  4.52050  6.78075      60.0000  1.50000  1.50000  27      --    -29.5362220    0.443230000        23 0.0000000      n/a                           n/a 
+ 4.42429  4.42429  7.07886      60.0000  1.60000  1.60000  31      --    -29.5363405    0.449980000        28 0.0000000      n/a                           n/a 
+ 4.33578  4.33578  7.37083      60.0000  1.70000  1.70000  35      --    -29.5340980    0.448570000        28 0.0000000      n/a                           n/a 
+ 4.30000  4.30000  6.70000      53.6429  1.55814  1.55814  39      --    -29.5395095    0.510850000        27 0.0000000      n/a                           n/a 
+ 4.40000  4.40000  6.70000      56.1669  1.52273  1.52273  42      --    -29.5387285    0.481360000        23 0.0000000      n/a                           n/a 
+ 4.50000  4.50000  6.70000      58.7490  1.48889  1.48889  45      --    -29.5368780    0.453090000        23 0.0000000      n/a                           n/a 
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - test016-sweep/test016-sweep01/runwien.out
+ - test016-sweep/test016-sweep02/runwien.out
+ - test016-sweep/test016-sweep03/runwien.out
+ - test016-sweep/test016-sweep04/runwien.out
+ - test016-sweep/test016-sweep05/runwien.out
+ - test016-sweep/test016-sweep06/runwien.out
+ - test016-sweep/test016-sweep07/runwien.out
+ - test016-sweep/test016-sweep08/runwien.out
+ - test016-sweep/test016-sweep09/runwien.out
+ - test016-sweep/test016-sweep10/runwien.out
+ - test016-sweep/test016-sweep11/runwien.out
+ - test016-sweep/test016-sweep12/runwien.out
+ - sweepsummary.out
+ - test016-sweep/test016-sweep01/synopsis.out
+ - test016-sweep/test016-sweep02/synopsis.out
+ - test016-sweep/test016-sweep03/synopsis.out
+ - test016-sweep/test016-sweep04/synopsis.out
+ - test016-sweep/test016-sweep05/synopsis.out
+ - test016-sweep/test016-sweep06/synopsis.out
+ - test016-sweep/test016-sweep07/synopsis.out
+ - test016-sweep/test016-sweep08/synopsis.out
+ - test016-sweep/test016-sweep09/synopsis.out
+ - test016-sweep/test016-sweep10/synopsis.out
+ - test016-sweep/test016-sweep11/synopsis.out
+ - test016-sweep/test016-sweep12/synopsis.out
+ - synopsis.out
+* .index files
+ - test016.index
+ - test016-sweep/test016-sweep.index
+* .ps files
+* .gnuplot files
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 18.6714558183
+metric matrix (1,2) : -9.3357279092
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 18.6714558183
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 45.8526163599
+complete basis specification for atom 1 : 
+  0.24243000 3    0   
+  0 0.05400   0.00200   CONT 0
+  0 -6.81300  0.00200   CONT 0
+  1 0.26100   0.00200   CONT 0
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.52479 8.421  7.740  811    36     2   -0.36471 -6.85297 1.98404  
+
+convergence details (DIRB angle) : 
+  ite  1     
+1      0.0   
+2      4.5   
+3      46.4  
+4      21.4  

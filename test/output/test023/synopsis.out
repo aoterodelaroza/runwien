@@ -1,0 +1,115 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test023
+pwd     : /home/alberto/cvs/runwien/test/test023
+machine : neon.quimica.uniovi.es
+date    : mar oct  7 09:59:39 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 2
+prescf section run, time (s) = 20
+scf section run, time (s) = 690
+printrho section run, time (s) = 4
+dosplot section run, time (s) = 71
+rxplot section run, time (s) = 167
+bandplot section run, time (s) = 19
+kdos section run, time (s) = 1
+critic section run, time (s) = 22
+total run time (s) = 996
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Cr1Cr1
+Mol. mass    : 103.992200
+a / bohr     : 5.72100000
+b / bohr     : 5.72100000
+c / bohr     : 5.72100000
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 90.00000000
+c/a          : 1.00000000
+c/b          : 1.00000000
+b/a          : 1.00000000
+volume/bohr^3: 187.24742036
+Mol. volume  : 187.24742036
+space group  : Im-3m
+lattice      : P
+system       : cubic
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Cr mult= 1 x= 0.00000000 y= 0.00000000 z= 0.00000000 sym= m-3m
+  atom 2 is Cr mult= 1 x= 0.50000000 y= 0.50000000 z= 0.50000000 sym= 
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 48
+Valence electrons in unit cell   : 28
+Core electrons in unit cell      : 20
+Core | val | total e- for atom   : [Cr] 10 | 14 | 24
+Core | val el. conf. for atom    : [Cr] 1S(2)2S(2)2P(6) | 3S(2)3P(6)3D(5)4S(1)
+Core leaking (e-) for atom 1 : [Cr] 0.00000e+00
+Core leaking (e-) for atom 2 : [Cr] 0.00000e+00
+Atomic energy (lstart) [Cr]      : -2101.1354980
+Total in vacuo energy (lstart)   : -4202.2709960
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : yes
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, npt (atom 2)       : 781
+general, rmt (atom 1)       : 1.85000
+general, rmt (atom 2)       : 1.85000
+general, r0  (atom 1)       : 0.00010000
+general, r0  (atom 2)       : 0.00010000
+general, rkmax              : 8.00000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 15.000
+general, mix                : 0.40000
+general, kpts               : 5000
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 100 -ec 0.000100 -it 
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -4203.5124800000
+E fermi /ry = 0.76066
+Mag. moment = 0.02509
+Planarity   = 0.715726
+Morse sum   = 0
+Topology    = 2[1,1](0)|1[8]|1[12]|2[3,3]
+
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - criticsummary.out
+ - synopsis.out
+* .index files
+ - test023.index
+* .ps files
+ - test0231/test0231.rhoplot.totalrho.ps
+ - test0231/test0231.dosplot.1dn.ps
+ - test0231/test0231.dosplot.1.ps
+ - test0231/test0231.dosplot.1up.ps
+ - test0231/test0231.spaghettidn.ps
+ - test0231/test0231.spaghettiup.ps
+ - test0231/test0231.dosband.1.eps
+ - test0231/test0231.broad.specplot.ps
+ - test0231/test0231.unbroad.specplot.ps
+ - test0231/test023.eps
+* .gnuplot files
+ - test0231/test0231.rhoplot.totalrho.gnuplot
+ - test0231/test0231.dosplot.1.gnuplot
+ - test0231/test0231.rxplot.gnuplot
+ - test0231/test023.gnu
+

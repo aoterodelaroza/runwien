@@ -1,0 +1,44 @@
+general 
+  lattice H
+  equiv list Be
+    0.66666667 0.33333333 0.75000000
+    0.33333333 0.66666667 0.25000000
+  end equiv list
+  relativistic yes
+  cell parameters 4.3210478 4.3210478 6.7714557 90 90 120
+  link lmax lnsmax
+  npt *        781
+  r0  *        0.0001
+  rmt *        1.90
+  mix          0.40
+  gmax         20.0
+  lmax         10
+  lnsmax       4
+  rkmax        8.0
+  kpts         500
+end general
+initialization
+  xcpotential ggapbe96
+  ecoreval -10.0
+  orbitals 1   .24243  0
+    0    0.054     0.002 CONT 0
+    0   -6.813     0.002 CONT 0
+    1    0.261     0.002 CONT 0
+  end orbitals
+  lm list 1 10
+end initialization
+prescf default
+scf
+  max iterations 50
+  energy conv 0.0001
+end scf
+sweep
+  with c/a 1.5,1.6,1.7
+  with v   100,110,120
+  also
+  with a 4.3,4.4,4.5
+  with c 6.7
+end sweep
+synopsis
+ exhaustive
+end synopsis

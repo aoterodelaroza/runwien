@@ -1,0 +1,24 @@
+general
+ title  As, Wyckoff (2nd), COD
+ spglist R-3m  rhomb
+  As 0.226 0.226 0.226
+ end spglist
+ cell parameters 7.8065  7.8065  7.8065  54.167  54.167  54.167
+ kpts 1000
+ rkmax 7.0
+end general
+initialization
+ ecoreval -6.0
+ lm list 1 10
+end initialization
+prescf default
+scf
+ max iterations 100
+ energy conv 0.00001
+ charge conv 0.0001
+end scf
+critic
+ newton 1d-15
+ iws 3
+end critic
+synopsis default

@@ -1,0 +1,19 @@
+general
+  lattice F
+  equiv list Ni
+    0.0 0.0 0.0
+  end equiv list
+  cell parameters 6.7 6.7 6.7 90 90 90
+  rmt * 2.3
+  rkmax 8.0
+  kpts 3000
+  spinpolarized yes
+end general
+initialization default
+prescf default
+scf
+  charge conv 0.0001
+end scf
+synopsis
+  exhaustive
+end synopsis

@@ -1,0 +1,132 @@
+general 
+  lattice H
+  equiv list Cr
+    0.66666667 0.33333333 0.75000000
+    0.33333333 0.66666667 0.25000000
+  end equiv list
+  spinpolarized yes
+  cell parameters 4.8552029 4.8552029 7.92851315 90 90 120
+  npt *        781
+  rmt *        auto
+  rkmax        7.5
+  kpts         7500
+  mix          0.1
+end general
+initialization
+  xcpotential ggapbe96
+  ecoreval -6.0
+  lm list 1 10
+  orbitals 1 .53760 0
+    0    0.535     0.000 CONT 1 
+    0   -4.404     0.002 CONT 1 
+    1    0.677     0.000 CONT 1 
+    1   -2.298     0.000 CONT 1 
+    2    0.718     0.000 CONT 1 
+  end orbitals
+end initialization
+prescf default
+scf
+  max iterations 100
+  energy conv 0.00001
+  itdiag 4
+end scf
+printrho
+  rho valrho
+  origin 1 0 0 1
+  xend   0 1 0 1
+  yend   1 0 1 1
+  nshells 3 3 3
+  npt 100 100
+  zmin *
+  zmax 0.3
+  dc 50
+  type 3d
+end printrho
+printrho
+  rho totalrho
+  origin 1 0 0 1
+  xend   0 1 0 1
+  yend   1 0 1 1
+  nshells 3 3 3
+  npt 100 100
+  zmin *
+  zmax 0.3
+  dc 50
+  type 3d
+end printrho
+printrho
+  rho vcoul
+  origin 1 0 0 1
+  xend   0 1 0 1
+  yend   1 0 1 1
+  nshells 3 3 3
+  npt 100 100
+  zmin -0.3
+  zmax *
+  dc 50
+  type 3d
+end printrho
+printrho
+  rho vxc
+  origin 1 0 0 1
+  xend   0 1 0 1
+  yend   1 0 1 1
+  nshells 3 3 3
+  npt 100 100
+  zmin -5.0
+  zmax *
+  dc 50
+  type 3d
+end printrho
+printrho
+  rho vtotal
+  origin 1 0 0 1
+  xend   0 1 0 1
+  yend   1 0 1 1
+  nshells 3 3 3
+  npt 100 100
+  zmin -0.5
+  zmax *
+  dc 50
+  type 3d
+end printrho
+printrho
+  rho spin
+  origin 1 0 0 1
+  xend   0 1 0 1
+  yend   1 0 1 1
+  nshells 3 3 3
+  npt 100 100
+  zmin *
+  zmax 0.00001
+  dc 50
+  type 3d
+end printrho
+printrho
+  rho atomic
+  origin 1 0 0 1
+  xend   0 1 0 1
+  yend   1 0 1 1
+  nshells 3 3 3
+  npt 100 100
+  zmin *
+  zmax 0.3
+  dc 50
+  type 3d
+end printrho
+printrho
+  rho deform
+  origin 0 0 1 3
+  xend   3 0 1 3
+  yend   0 3 1 3
+  nshells 3 3 3
+  npt 100 100
+  zmin *
+  zmax *
+  dc 50
+  type 3d
+  scale normal
+end printrho
+synopsis
+  exhaustive
+end synopsis

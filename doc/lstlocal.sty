@@ -1,0 +1,116 @@
+\ProvidesFile{lstlocal.sty}
+    [2007/11/27 1.3 listings language file]
+%%
+\lst@definelanguage{GULP}%
+  {morekeywords={end,%
+      14_scale,absolute_coordinates,accelerations,accuracy,angle,anneal,%
+      atomab,aver,average,axilrod-teller,bacross,bcoscross,bcross,best,%
+      boattractive,bocharge,bond,borepulsive,bornq,boselfenergy,both,%
+      botwobody,box,breathe,brenner,broaden_dos,bsm,buck4,buckingham,%
+      bulk_modulus,bulk_noopt,c6,cartesian,caver,cell,cellonly,centre,%
+      cfaver,charge,cmm,compare,configurations,conjugate,conjugate,%
+      connect,conp,conserved,constrain,contents,conv,cosh-spring,Cost,%
+      Cost,coulomb,covalent,covexp,crossover,current_time,cutd,cutp,%
+      cuts,Cv,cvec,damped_dispersion,dcharge,debug,defect,deflist,%
+      delayforce,delf,delta,dfp,dhkl,dipole,discrete,dispersion,%
+      distance,ditto,dmaximum,dminimum,dump,eam_alloy,eam_density,%
+      eam_functional,eam_potential_shift,eem,efg,eigenvectors,einstein,%
+      elastic,electronegativity,element,endforce,energy,ensemble,entropy,%
+      epsilon/sigma,equatorial,equilibration,erongi,ewaldrealradius,%
+      exponential,Exponential,external_force,extracutoff,fbfgs,fermi-dirac,%
+      finite,fit,fix_molecule,fractional,free_energy,frequency,ftol,%
+      full,gamma_angular_steps,gamma_direction_of_approach,gcmcmolecule,%
+      gcmcspecies,gdcrit,general,genetic,genetic,global,gmax,gradient,%
+      gradients,grid,gtol,harmonic,hessian,hexagonal,hfdlc,hfdlc,%
+      hfrefractive_index,hill,hydrogen-bond,igauss,ignore,impurity,%
+      integrator,intensity,inter,interstitial,intra,inversion,ionic,%
+      isotropic,iterations,keyword,kfull,kpoints,lbfgs,lbfgs_order,%
+      lennard,libdump,libff,library,lin3,line,line_continuation,linmin,%
+      ljbuffered,lower_symmetry,lowest_mode,manybody,marvin,marvinSE,%
+      mass,maxcyc,maximise,maximum,mcchemicalpotential,mccreate,mcdestroy,%
+      mcmaxdisplacement,mcmaxrotation,mcmeans,mcmove,mcoutfreq,mcrotate,%
+      mcsample,mcstep,mctrial,mcvolume,md,mdarchive,mdconstraint,%
+      mincell,minimum,Minimum,minimum_image,mode2a,molecule,molmec,%
+      molq,momentum_correct,monopoleq,montecarlo,morse,move_2a_to_1,%
+      murrell-mottram,mutation,name,newda,noanisotropic_2b,nobond,%
+      nobreathe,nod2sym,nodensity_out,nodpsym,nodsymmetry,noelectrostatics,%
+      noenergy,noexclude,nofirst_point,noflags,nofrequency,nokpoints,%
+      noksymmetry,nolist_md,nomodcoord,nomolecularinternalke,nononanal,%
+      noquicksearch,noreal,norecip,norepulsive_cutoff,nosderv,nosymmetry,%
+      nozeropt,numdiag,observables,odirection,oldelastic,oldunits,omega,%
+      omega_damping,operators,optimise,origin,outcon,outofplane,output,%
+      pcell,pfractional,phonon,piezoelectric,polarisability,polynomial,%
+      positive,pot,potential,potential_interpolation,potgrid,potsites,%
+      predict,predict,pressure,print,production,project_dos,property,%
+      pvector,qelectronegativity,qeq,qeqiter,qeqradius,qeqtol,qerfc,%
+      qok,qoverr2,qtaper,qwolf,regi2a,regi_before,region_1,relax,%
+      reldef,resetvectors,restore,rfo,rspeed,rtol,ryckaert,rydberg,%
+      sample,save,sbulkenergy,scale,scell,scmaxsearch,sdlc,sdlc,seed,%
+      sfractional,shear_modulus,shell,shellmass,shift,shrink,simultaneous,%
+      single,size,slower,sm,smelectronegativity,spacegroup,spatial,%
+      species,spline,split,spring,squaredharmonic,srefractive_index,%
+      sregion2,sshift,start,static_first,stepmx,stillinger-weber,%
+      stop,storevectors,stress,supercell,svectors,sw2,sw2jb,sw3,%
+      sw3jb,switch_minimiser,symbol,symmetry_cell,symmetry_operator,%
+      td_external_force,temperature,Temperature,terse,tether,three-body,%
+      time,timestep,title,torangle,torexp,torharm,torsion,tortaper,%
+      totalenergy,tournament,trajectory_format,transition_state,translate,%
+      tscale,tsuneyuki,Two,unfreeze,unique,unit,update,urey-bradley,%
+      vacancy,variables,vdw,vectors,velocities,voigt,weight,write,%
+      xoutofplane,xtol,zero_potential,zsisa},%
+   sensitive=f,%
+   morecomment=[l]\#,%
+   morecomment=[l]\#\#,%
+   morestring=[m]',%
+   morestring=[m]"%
+  }[keywords,comments,strings]%
+%%
+\lst@definelanguage{runwien}%
+  {morekeywords={ 1d,2d,3dc,3dcube,a,aim,all,alpha,also,any,atom,atomic,auto,%
+    b,b/a,bandplot,basinplot,bcnt,beta,birch,broad,c,c/a,cartesian,c/b,cell,%
+    chain,charge,check,clean,cont,conv,critic,cube,d2d,d3d,dc,de,debye,debyeiter,%
+    debyestatic,debyestaticbv,default,deform,deformation,density,dn,do,doplot,%
+    dos,dosplot,ecoreval,elastic,end,endcheck,energy,energymax,energymin,eos,%
+    equiv,ev,except,exhaustive,exit,fermi,file,first,fixed,fixmin,force,format,four,%
+    free,full,gamma,gauss,general,ggapbe96,ggapw91,ggawc06,gibbs,global,gmax,gmin,%
+    gnuplot,gradient,gradmod,grdvec,in1,in1maxenergy,initialization,integrals,%
+    itdiag,iterations,iws,join,kdos,kgeninversion,kgenoutput,kgenshift,klist,kpts,l,%
+    lap,laplacian,lattice,line,link,list,lm,lmax,lnsmax,loadcif,loadcheck,log,%
+    long,lsda,max,maxangle,maxlength,merge,mini,mix,mode,n,new,newton,nice,nneq,%
+    nnfactor,no,noiws,nolabels,none,norenorm,normal,nosend,nosgroup,nosummary,%
+    npt,nshells,numerical,old,orbitals,origin,output,parallel,param,parameters,path,%
+    plane,plotunits,plotxmax,plotxmin,plotymax,points,polyorder,prescf,%
+    pressure,print,printrho,r0,reference,relativistic,renorm,reread,respect,reuse,%
+    rho,rhomb,rkmax,rmt,root,rxplot,ry,scale,scf,short,spglist,spin,spinpolarized,static,%
+    stop,struct,sweep,synopsis,system,temp,temperature,template,temps,term1,tetra,%
+    three,title,totalrho,two,type,undo,up,use,uses,v,valrho,vcoul,%
+    vinet,vs,vtotal,vxc,wien,with,xcpotential,xend,yend,yes,zmax,zmin,%
+    loadstruct},%
+   sensitive=f,%
+   morecomment=[l]\#,%
+   morecomment=[l]\#\#,%
+   morestring=[m]',%
+   morestring=[m]"%
+  }[keywords,comments,strings]%
+%%
+\lst@definelanguage{critic}%
+  {morekeywords={atan,bader,bcpall,cp,cpall,crystal,endcrystal,%
+      rbcpall,struct,clm,clmdown,spg,cell,neq,point,%
+      check,endcheck,line,fluxprint,newton,amoeba,precanalyze,auto,powell,%
+      plhsearch,limits,divisions,ftol,abstol,radius,gradthr,maxit,integrals,%
+      sphereintegral,cellplot,densiplotbeg,densiplotend,del2plotbeg,%
+      del2plotend,doplot,density,rho,gradmod,laplacian,lap,gradient,%
+      format,default,gnuplot,d2d,d3d,cartesian,3dcube,cube,file,files,1d,2d,3dc,%
+      grdvec,plane,param,orig,cp,cpall,check,endcheck,endgrdvec,ncp,bcp,%
+      rcp,ccp,graph,graphcp,options,stdout,tesselout,every,mpoints,%
+      msticks,title,shells,triangulate,basinplot,progressive,%
+      basindensity,bundleplot,set,print,debug,change,grdstep,iws,noiws,%
+      graph,coredens,cutdens,innerrad,exact,approximate,interactive,%
+      filterfactor,radius,end},%
+   sensitive=f,%
+   morecomment=[l]\#,%
+   morecomment=[l]\#\#,%
+   morestring=[m]',%
+   morestring=[m]"%
+  }[keywords,comments,strings]%
+\endinput

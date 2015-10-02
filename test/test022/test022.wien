@@ -1,0 +1,28 @@
+general
+ loadcif zno.cif
+ rkmax 8.0
+ kpts 1000
+ spinpolarized yes
+end general
+initialization 
+ ecoreval -10.0
+end initialization
+prescf default
+scf 
+ itdiag
+ energy conv 0.0001
+end scf
+printrho 
+ zmax 2.0
+end printrho
+dosplot default
+bandplot default
+kdos 
+ kdos 1
+end kdos
+rxplot default
+critic
+ iws 3
+ newton 1e-15
+end critic
+synopsis default

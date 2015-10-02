@@ -1,0 +1,126 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test014
+pwd     : /home/alberto/cvs/runwien/test/test014
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 15:43:36 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 1
+prescf section run, time (s) = 9
+scf section run, time (s) = 657
+critic section run, time (s) = 50
+total run time (s) = 717
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Li1
+Mol. mass    : 6.941000
+a / bohr     : 6.63300000
+b / bohr     : 6.63300000
+c / bohr     : 6.63300000
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 90.00000000
+c/a          : 1.00000000
+c/b          : 1.00000000
+b/a          : 1.00000000
+volume/bohr^3: 291.83003814
+Mol. volume  : 145.91501907
+space group  : Im-3m
+lattice      : B
+system       : cubic
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Li mult= 1 x= 0.00000000 y= 0.00000000 z= 0.00000000 sym= m-3m
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 3
+Valence electrons in unit cell   : 3
+Core electrons in unit cell      : 0
+Core | val | total e- for atom   : [Li]  | 3 | 3
+Core | val el. conf. for atom    : [Li]  | 1S(2)2S(1)
+Core leaking (e-) for atom 1 : [Li] 0.00000e+00
+Atomic energy (lstart) [Li]      : -14.9258920
+Total in vacuo energy (lstart)   : -14.9258920
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : yes
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, rmt (atom 1)       : 1.50000
+general, r0  (atom 1)       : 0.00001000
+general, rkmax              : 7.50000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 20.000
+general, mix                : 0.40000
+general, kpts               : 7500
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 30 -ec 0.000001 -it 
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -15.0437290000
+E fermi /ry = 0.03034
+Mag. moment = 0.00062
+Planarity   = 0.962169
+Morse sum   = 0
+Topology    = 1[2](2[12,24])|4[12,24,48,48]|4[6,8,48,96]|2[16,48]
+
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - criticsummary.out
+ - synopsis.out
+* .index files
+ - test014.index
+* .ps files
+* .gnuplot files
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 43.9966890000
+metric matrix (1,2) : 0.0000000000
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 43.9966890000
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 43.9966890000
+complete basis specification for atom 1 : 
+  0.30000000 2    0   
+  0 0.30000   0.00000   CONT 1
+  0 -3.50000  0.00500   STOP 1
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.04844 10.000 7.360  521    220    2   -0.27546 -3.39907 1.66007  
+
+convergence details (DIRB angle) : 
+  ite  1     
+1      0.0   
+2      4.1   
+3      111.6 
+4      50.8  
+5      95.8  
+6      67.7  
+7      28.9  
+8      23.9  
+9      13.3  
+10     41.8  
+11     42.6  
+12     41.7  
+13     64.6  
+14     34.0  
+15     54.1  
+16     23.5  

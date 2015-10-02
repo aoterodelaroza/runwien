@@ -1,0 +1,15 @@
+general 
+  loadcif mgo.cif
+  title periclase, bandplot
+  rkmax 8.0
+  kpts  5000
+end general
+initialization default
+prescf default
+scf
+  energy conv 0.00001
+end scf
+bandplot default
+synopsis 
+  exhaustive
+end synopsis

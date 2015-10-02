@@ -1,0 +1,126 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test006
+pwd     : /home/alberto/cvs/runwien/test/test006
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 14:09:23 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 1
+prescf section run, time (s) = 1
+scf section run, time (s) = 0
+free section run, time (s) = 540
+total run time (s) = 542
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Ca1F2
+Mol. mass    : 78.074806
+a / bohr     : 10.32347900
+b / bohr     : 10.32347900
+c / bohr     : 10.32347900
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 90.00000000
+c/a          : 1.00000000
+c/b          : 1.00000000
+b/a          : 1.00000000
+volume/bohr^3: 1100.21670831
+Mol. volume  : 275.05417708
+space group  : Fm-3m
+lattice      : P
+system       : cubic
+inversion?   : no
+structure loaded from .cif file : fluorite.cif
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Ca mult= 4 x= 0.00000000 y= 0.00000000 z= 0.00000000 sym= m-3m
+  atom 2 is F mult= 8 x= 0.25000000 y= 0.25000000 z= 0.25000000 sym= -43m
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 152
+Valence electrons in unit cell   : 96
+Core electrons in unit cell      : 56
+Core | val | total e- for atom   : [F] 2 | 7 | 9
+Core | val el. conf. for atom    : [F] 1S(2) | 2S(2)2P(5)
+Core | val | total e- for atom   : [Ca] 10 | 10 | 20
+Core | val el. conf. for atom    : [Ca] 1S(2)2S(2)2P(6) | 3S(2)3P(6)4S(2)
+Core leaking (e-) for atom 1 : [Ca] 0.00000e+00
+Core leaking (e-) for atom 2 : [F] 0.00000e+00
+Atomic energy (lstart) [Ca]      : -1360.6594040
+Atomic energy (lstart) [ F]      : -199.5202110
+Total in vacuo energy (lstart)   : -1759.6998260
+Atomic energy (free) [Ca]        : -1360.6665390
+Atomic energy (free) [ F]        : -199.4832880
+Total in vacuo energy (free)     : -1759.6331150
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : no
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, npt (atom 2)       : 781
+general, rmt (atom 1)       : 2.22000
+general, rmt (atom 2)       : 2.22000
+general, r0  (atom 1)       : 0.00010000
+general, r0  (atom 2)       : 0.00010000
+general, rkmax              : 8.00000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 12.000
+general, mix                : 0.20000
+general, kpts               : 3000
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.01150000
+scf, commands used          :  -i 30 -ec 0.000100
+
+
+Only one structure, no variable parameters
+No scf data available...
+No critic data available
+
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - test006-free-ca/synopsis.out
+ - test006-free-f/synopsis.out
+ - synopsis.out
+* .index files
+ - test006.index
+* .ps files
+* .gnuplot files
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 106.5742186634
+metric matrix (1,2) : 0.0000000000
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 106.5742186634
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 106.5742186634
+complete basis specification for atom 1 : 
+  0.30000000 4    0   
+  0 0.30000   0.00000   CONT 1
+  0 -3.16000  0.00500   STOP 1
+  1 -1.75000  0.01000   CONT 1
+  1 0.30000   0.00000   CONT 1
+complete basis specification for atom 2 : 
+  0.30000000 3    0   
+  0 -1.95000  0.01000   CONT 1
+  0 0.30000   0.00000   CONT 1
+  1 0.30000   0.00000   CONT 1
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.49986 0.000  0.000  0      0      0   0.00000  0.00000  0.00000  
+
+convergence details (DIRB angle) : 
+  ite  1     

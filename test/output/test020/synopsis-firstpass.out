@@ -1,0 +1,134 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test020
+pwd     : /home/alberto/cvs/runwien/test/test020
+machine : hidrogeno
+date    : mar oct  7 09:45:26 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 1
+prescf section run, time (s) = 8
+scf section run, time (s) = 0
+sweep section run, time (s) = 0
+total run time (s) = 9
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Mg1
+Mol. mass    : 24.305000
+a / bohr     : 4.06464100
+b / bohr     : 4.06464100
+c / bohr     : 6.59904700
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 120.00000000
+c/a          : 1.62352518
+c/b          : 1.62352518
+b/a          : 1.00000000
+volume/bohr^3: 94.41831384
+Mol. volume  : 47.20915692
+space group  : P63/mmc
+lattice      : H
+system       : hexagonal
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Mg mult= 2 x= 0.66666667 y= 0.33333333 z= 0.75000000 sym= -6m2
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 24
+Valence electrons in unit cell   : 20
+Core electrons in unit cell      : 4
+Core | val | total e- for atom   : [Mg] 2 | 10 | 12
+Core | val el. conf. for atom    : [Mg] 1S(2) | 2S(2)2P(6)3S(2)
+Core leaking (e-) for atom 1 : [Mg] 0.00000e+00
+Atomic energy (lstart) [Mg]      : -400.5599220
+Total in vacuo energy (lstart)   : -400.5599220
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : no
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, rmt (atom 1)       : 1.90000
+general, r0  (atom 1)       : 0.00010000
+general, rkmax              : 7.50000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 20.000
+general, mix                : 0.20000
+general, kpts               : 7000
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -7.500
+initialization, emin / ry   : -10.50000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 100 -ec 0.000100 -it  -in1new 3 
+
+
+Only one structure, no variable parameters
+No scf data available...
+No critic data available
+
+
+
+Structural grid (sweep) results
+---------------------------------------------------------------------
+
+Fixed parameters --
+alpha / deg   : 90
+beta / deg    : 90
+gamma / deg   : 120
+c / a         : 1.633
+c / b         : 1.633
+b / a         : 1
+
+Variable parameters --
+number of structures : 9
+ a / bohr b / bohr c / bohr     v/bohr^3 it. warning    energy / ry    efermi / ry   time /s planarity morsesum                      topology
+ 5.75814  5.75814  9.40304     135.0000               --- not done ---                                                 
+ 5.82837  5.82837  9.51773     140.0000               --- not done ---                                                 
+ 5.89694  5.89694  9.62971     145.0000               --- not done ---                                                 
+ 5.96396  5.96396  9.73915     150.0000               --- not done ---                                                 
+ 6.02950  6.02950  9.84618     155.0000               --- not done ---                                                 
+ 6.09365  6.09365  9.95094     160.0000               --- not done ---                                                 
+ 6.15648  6.15648 10.05353     165.0000               --- not done ---                                                 
+ 6.21805  6.21805 10.15407     170.0000               --- not done ---                                                 
+ 6.27842  6.27842 10.25266     175.0000               --- not done ---                                                 
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - sweepsummary.out
+ - synopsis-firstpass.out
+* .index files
+ - test020.index
+ - test020-sweep/test020-sweep.index
+* .ps files
+* .gnuplot files
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 16.5213064589
+metric matrix (1,2) : -8.2606532294
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 16.5213064589
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 43.5474213082
+complete basis specification for atom 1 : 
+  -0.07138000 4    0   
+  0 0.03400   0.00000   CONT 1
+  0 -5.30100  0.00200   CONT 1
+  1 0.13400   0.00000   CONT 1
+  1 -2.85700  0.00200   CONT 1
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.60859 7.895  0.000  710    392    0   0.00000  0.00000  0.00000  
+
+convergence details (DIRB angle) : 
+  ite  1     

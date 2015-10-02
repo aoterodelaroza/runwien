@@ -1,0 +1,148 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test008
+pwd     : /home/alberto/cvs/runwien/test/test008
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 14:45:57 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 2
+prescf section run, time (s) = 1
+scf section run, time (s) = 423
+dosplot section run, time (s) = 47
+total run time (s) = 473
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Mg1
+Mol. mass    : 24.305000
+a / bohr     : 6.74476700
+b / bohr     : 6.74476700
+c / bohr     : 10.38116600
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 120.00000000
+c/a          : 1.53914375
+c/b          : 1.53914375
+b/a          : 1.00000000
+volume/bohr^3: 408.98809847
+Mol. volume  : 204.49404923
+space group  : P63/mmc
+lattice      : H
+system       : hexagonal
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Mg mult= 2 x= 0.66666667 y= 0.33333333 z= 0.75000000 sym= -6m2
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 24
+Valence electrons in unit cell   : 20
+Core electrons in unit cell      : 4
+Core | val | total e- for atom   : [Mg] 2 | 10 | 12
+Core | val el. conf. for atom    : [Mg] 1S(2) | 2S(2)2P(6)3S(2)
+Core leaking (e-) for atom 1 : [Mg] 0.00000e+00
+Atomic energy (lstart) [Mg]      : -400.5599230
+Total in vacuo energy (lstart)   : -400.5599230
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : no
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, rmt (atom 1)       : 2.50000
+general, r0  (atom 1)       : 0.00010000
+general, rkmax              : 8.00000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 20.000
+general, mix                : 0.40000
+general, kpts               : 7500
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 30 -ec 0.000010 -it  -in1new 3 
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -400.6572480000
+E fermi /ry = 0.12961
+No critic data available
+
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - synopsis.out
+* .index files
+ - test008.index
+* .ps files
+ - test0081/test0081.dosplot.10.ps
+ - test0081/test0081.dosplot.11.ps
+ - test0081/test0081.dosplot.12.ps
+ - test0081/test0081.dosplot.1.ps
+ - test0081/test0081.dosplot.2.ps
+ - test0081/test0081.dosplot.3.ps
+ - test0081/test0081.dosplot.4.ps
+ - test0081/test0081.dosplot.5.ps
+ - test0081/test0081.dosplot.6.ps
+ - test0081/test0081.dosplot.7.ps
+ - test0081/test0081.dosplot.8.ps
+ - test0081/test0081.dosplot.9.ps
+ - test0081/test0081.dosplot.join1.ps
+ - test0081/test0081.dosplot.join2.ps
+ - test0081/test0081.dosplot.join3.ps
+* .gnuplot files
+ - test0081/test0081.dosplot.10.gnuplot
+ - test0081/test0081.dosplot.11.gnuplot
+ - test0081/test0081.dosplot.12.gnuplot
+ - test0081/test0081.dosplot.1.gnuplot
+ - test0081/test0081.dosplot.2.gnuplot
+ - test0081/test0081.dosplot.3.gnuplot
+ - test0081/test0081.dosplot.4.gnuplot
+ - test0081/test0081.dosplot.5.gnuplot
+ - test0081/test0081.dosplot.6.gnuplot
+ - test0081/test0081.dosplot.7.gnuplot
+ - test0081/test0081.dosplot.8.gnuplot
+ - test0081/test0081.dosplot.9.gnuplot
+ - test0081/test0081.dosplot.join1.gnuplot
+ - test0081/test0081.dosplot.join2.gnuplot
+ - test0081/test0081.dosplot.join3.gnuplot
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 45.4918818843
+metric matrix (1,2) : -22.7459409421
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 45.4918818843
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 107.7686075196
+complete basis specification for atom 1 : 
+  0.30000000 4    0   
+  0 0.30000   0.00000   CONT 1
+  0 -5.57000  0.00500   STOP 1
+  1 0.30000   0.00000   CONT 1
+  1 -3.12000  0.00500   STOP 1
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.32006 6.400  7.730  2761   392    16  -0.34976 -5.49125 0.96749  
+
+convergence details (DIRB angle) : 
+  ite  1     
+1      0.0   
+2      101.8 
+3      28.6  
+4      69.7  
+5      129.9 
+6      42.0  
+7      63.8  
+8      70.1  
+9      68.9  
+10     38.1  

@@ -1,0 +1,275 @@
+General information
+---------------------------------------------------------------------
+title   : TiC (RTP) geometry
+root    : test021
+pwd     : /home/alberto/cvs/runwien/test/test021
+machine : neon.quimica.uniovi.es
+date    : mar oct 14 10:00:57 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 2
+prescf section run, time (s) = 9
+scf section run, time (s) = 361
+elastic section run, time (s) = 17340
+free section run, time (s) = 12713
+dosplot section run, time (s) = 19
+bandplot section run, time (s) = 11
+kdos section run, time (s) = 0
+critic section run, time (s) = 945
+sweep section run, time (s) = 2960
+gibbs section run, time (s) = 0
+total run time (s) = 34360
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Ti1C1
+Mol. mass    : 59.877700
+a / bohr     : 8.16097100
+b / bohr     : 8.16097100
+c / bohr     : 8.16097100
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 90.00000000
+c/a          : 1.00000000
+c/b          : 1.00000000
+b/a          : 1.00000000
+volume/bohr^3: 543.53248293
+Mol. volume  : 135.88312073
+space group  : Fm-3m
+lattice      : F
+system       : cubic
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Ti mult= 1 x= 0.0000000000 y= 0.0000000000 z= 0.0000000000 sym= m-3m
+  atom 2 is C mult= 1 x= 0.5000000000 y= 0.5000000000 z= 0.5000000000 sym= m-3m
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 28
+Valence electrons in unit cell   : 16
+Core electrons in unit cell      : 12
+Core | val | total e- for atom   : [C] 2 | 4 | 6
+Core | val el. conf. for atom    : [C] 1S(2) | 2S(2)2P(2)
+Core | val | total e- for atom   : [Ti] 10 | 12 | 22
+Core | val el. conf. for atom    : [Ti] 1S(2)2S(2)2P(6) | 3S(2)3P(6)3D(2)4S(2)
+Atomic energy (lstart) [Ti]      : -1707.2049470
+Atomic energy (lstart) [ C]      : -75.6208030
+Total in vacuo energy (lstart)   : -1782.8257500
+Atomic energy (free) [Ti]        : -1706.6461130
+Atomic energy (free) [ C]        : -74.4243770
+Total in vacuo energy (free)     : -1781.0704900
+Core leaking for non-equivalent atoms : 
+ Id       Ti          C    
+    1  0.000e+00  3.000e-06
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : no
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, npt (atom 2)       : 781
+general, rmt (atom 1)       : 2.06400
+general, rmt (atom 2)       : 1.83360
+general, r0  (atom 1)       : 0.00005000
+general, r0  (atom 2)       : 0.00005000
+general, rkmax              : 9.00000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 12.000
+general, mix                : 0.20000
+general, kpts               : 5000
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          : 
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -1783.9651460000
+E fermi /ry = 0.77598
+Planarity   = 0.404297
+Morse sum   = 0
+Topology    = 2[4,4](0)|1[24]|1[24]|1[8]
+
+
+
+Structural grid (sweep) results
+---------------------------------------------------------------------
+
+Fixed parameters --
+alpha / deg   : 90.0000000000
+beta / deg    : 90.0000000000
+gamma / deg   : 90.0000000000
+c / a         : 1.0000000000
+c / b         : 1.0000000000
+b / a         : 1.0000000000
+
+Variable parameters --
+number of structures : 23
+ a / bohr b / bohr c / bohr     v/bohr^3 it. warning    energy / ry    efermi / ry   time /s planarity morsesum                      topology
+ 7.50000  7.50000  7.50000     105.4688   0      --      0.0000000    0.000000000         0 0.0000000      n/a                           n/a 
+ 7.55000  7.55000  7.55000     107.5922   0      --      0.0000000    0.000000000         1 0.0000000      n/a                           n/a 
+ 7.60000  7.60000  7.60000     109.7440   0      --      0.0000000    0.000000000         1 0.0000000      n/a                           n/a 
+ 7.65000  7.65000  7.65000     111.9243   0      --      0.0000000    0.000000000         0 0.0000000      n/a                           n/a 
+ 7.70000  7.70000  7.70000     114.1333   0      --      0.0000000    0.000000000         0 0.0000000      n/a                           n/a 
+ 7.75000  7.75000  7.75000     116.3711   0      --      0.0000000    0.000000000         0 0.0000000      n/a                           n/a 
+ 7.80000  7.80000  7.80000     118.6380  10      --  -1783.9351740    0.918810000       242 0.0000000      n/a                           n/a 
+ 7.85000  7.85000  7.85000     120.9342   4      --  -1783.9426530    0.900250000       107 0.0000000      n/a                           n/a 
+ 7.90000  7.90000  7.90000     123.2597   4      --  -1783.9490800    0.882220000       109 0.0000000      n/a                           n/a 
+ 7.95000  7.95000  7.95000     125.6150   7      --  -1783.9541780    0.851760000       181 0.0000000      n/a                           n/a 
+ 8.00000  8.00000  8.00000     128.0000   4      --  -1783.9583090    0.834470000       111 0.0000000      n/a                           n/a 
+ 8.05000  8.05000  8.05000     130.4150   6      --  -1783.9614860    0.815930000       163 0.0000000      n/a                           n/a 
+ 8.10000  8.10000  8.10000     132.8603   7      --  -1783.9637370    0.797310000       188 0.0000000      n/a                           n/a 
+ 8.15000  8.15000  8.15000     135.3358   8      --  -1783.9650790    0.779460000       216 0.0000000      n/a                           n/a 
+ 8.20000  8.20000  8.20000     137.8420   6      --  -1783.9655550    0.762540000       168 0.0000000      n/a                           n/a 
+ 8.25000  8.25000  8.25000     140.3789   4      --  -1783.9652360    0.746140000       119 0.0000000      n/a                           n/a 
+ 8.30000  8.30000  8.30000     142.9468   4      --  -1783.9642150    0.731320000       120 0.0000000      n/a                           n/a 
+ 8.35000  8.35000  8.35000     145.5457   4      --  -1783.9624460    0.716120000       122 0.0000000      n/a                           n/a 
+ 8.40000  8.40000  8.40000     148.1760   6      --  -1783.9597330    0.700720000       180 0.0000000      n/a                           n/a 
+ 8.45000  8.45000  8.45000     150.8378   9      --  -1783.9568110    0.683230000       265 0.0000000      n/a                           n/a 
+ 8.50000  8.50000  8.50000     153.5312   4      --  -1783.9530770    0.669450000       128 0.0000000      n/a                           n/a 
+ 8.55000  8.55000  8.55000     156.2566  11      --  -1783.9489270    0.653880000       329 0.0000000      n/a                           n/a 
+ 8.60000  8.60000  8.60000     159.0140   6      --  -1783.9441050    0.640240000       187 0.0000000      n/a                           n/a 
+
+
+Gibbs section results
+---------------------------------------------------------------------
+Check test021-gibbs/test021.outputgibbs 
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - criticsummary.out
+ - test021-elastic/test021-111000/test02101/synopsis.out
+ - test021-elastic/test021-111000/test02102/synopsis.out
+ - test021-elastic/test021-111000/test02103/synopsis.out
+ - test021-elastic/test021-111000/test02104/synopsis.out
+ - test021-elastic/test021-111000/test02105/synopsis.out
+ - test021-elastic/test021-111000/test02106/synopsis.out
+ - test021-elastic/test021-111000/test02107/synopsis.out
+ - test021-elastic/test021-111000/test02108/synopsis.out
+ - test021-elastic/test021-111000/test02109/synopsis.out
+ - test021-elastic/test021-111000/test02110/synopsis.out
+ - test021-elastic/test021-111000/test02111/synopsis.out
+ - test021-elastic/test021-001000/test02101/synopsis.out
+ - test021-elastic/test021-001000/test02102/synopsis.out
+ - test021-elastic/test021-001000/test02103/synopsis.out
+ - test021-elastic/test021-001000/test02104/synopsis.out
+ - test021-elastic/test021-001000/test02105/synopsis.out
+ - test021-elastic/test021-001000/test02106/synopsis.out
+ - test021-elastic/test021-001000/test02107/synopsis.out
+ - test021-elastic/test021-001000/test02108/synopsis.out
+ - test021-elastic/test021-001000/test02109/synopsis.out
+ - test021-elastic/test021-001000/test02110/synopsis.out
+ - test021-elastic/test021-001000/test02111/synopsis.out
+ - test021-elastic/test021-000111/test02101/synopsis.out
+ - test021-elastic/test021-000111/test02102/synopsis.out
+ - test021-elastic/test021-000111/test02103/synopsis.out
+ - test021-elastic/test021-000111/test02104/synopsis.out
+ - test021-elastic/test021-000111/test02105/synopsis.out
+ - test021-elastic/test021-000111/test02106/synopsis.out
+ - test021-elastic/test021-000111/test02107/synopsis.out
+ - test021-elastic/test021-000111/test02108/synopsis.out
+ - test021-elastic/test021-000111/test02109/synopsis.out
+ - test021-elastic/test021-000111/test02110/synopsis.out
+ - test021-elastic/test021-000111/test02111/synopsis.out
+ - test021-elastic/elasticsummary.out
+ - test021-free-ti/synopsis.out
+ - test021-free-c/synopsis.out
+ - test021-sweep/test021-sweep01/runwien.out
+ - test021-sweep/test021-sweep02/runwien.out
+ - test021-sweep/test021-sweep03/runwien.out
+ - test021-sweep/test021-sweep04/runwien.out
+ - test021-sweep/test021-sweep05/runwien.out
+ - test021-sweep/test021-sweep06/runwien.out
+ - test021-sweep/test021-sweep07/runwien.out
+ - test021-sweep/test021-sweep08/runwien.out
+ - test021-sweep/test021-sweep09/runwien.out
+ - test021-sweep/test021-sweep10/runwien.out
+ - test021-sweep/test021-sweep11/runwien.out
+ - test021-sweep/test021-sweep12/runwien.out
+ - test021-sweep/test021-sweep13/runwien.out
+ - test021-sweep/test021-sweep14/runwien.out
+ - test021-sweep/test021-sweep15/runwien.out
+ - test021-sweep/test021-sweep16/runwien.out
+ - test021-sweep/test021-sweep17/runwien.out
+ - test021-sweep/test021-sweep18/runwien.out
+ - test021-sweep/test021-sweep19/runwien.out
+ - test021-sweep/test021-sweep20/runwien.out
+ - test021-sweep/test021-sweep21/runwien.out
+ - test021-sweep/test021-sweep22/runwien.out
+ - test021-sweep/test021-sweep23/runwien.out
+ - sweepsummary.out
+ - test021-sweep/test021-sweep01/synopsis.out
+ - test021-sweep/test021-sweep02/synopsis.out
+ - test021-sweep/test021-sweep03/synopsis.out
+ - test021-sweep/test021-sweep04/synopsis.out
+ - test021-sweep/test021-sweep05/synopsis.out
+ - test021-sweep/test021-sweep06/synopsis.out
+ - test021-sweep/test021-sweep07/synopsis.out
+ - test021-sweep/test021-sweep08/synopsis.out
+ - test021-sweep/test021-sweep09/synopsis.out
+ - test021-sweep/test021-sweep10/synopsis.out
+ - test021-sweep/test021-sweep11/synopsis.out
+ - test021-sweep/test021-sweep12/synopsis.out
+ - test021-sweep/test021-sweep13/synopsis.out
+ - test021-sweep/test021-sweep14/synopsis.out
+ - test021-sweep/test021-sweep15/synopsis.out
+ - test021-sweep/test021-sweep16/synopsis.out
+ - test021-sweep/test021-sweep17/synopsis.out
+ - test021-sweep/test021-sweep18/synopsis.out
+ - test021-sweep/test021-sweep19/synopsis.out
+ - test021-sweep/test021-sweep20/synopsis.out
+ - test021-sweep/test021-sweep21/synopsis.out
+ - test021-sweep/test021-sweep22/synopsis.out
+ - test021-sweep/test021-sweep23/synopsis.out
+ - synopsis.out
+* .index files
+ - test021.index
+ - test021-sweep/test021-sweep.index
+* .ps files
+ - test0211/test0211.dosplot.1.ps
+ - test0211/test0211.dosplot.2.ps
+ - test0211/test0211.dosplot.3.ps
+ - test0211/test0211.dosplot.4.ps
+ - test0211/test0211.dosplot.5.ps
+ - test0211/test0211.dosplot.6.ps
+ - test0211/test0211.spaghetti.ps
+ - test0211/test0211.dosband.1.eps
+ - test0211/test021.eps
+ - test021-elastic/fit000111.eps
+ - test021-elastic/fit001000.eps
+ - test021-elastic/fit111000.eps
+* .gnuplot files
+ - test0211/test0211.dosplot.1.gnuplot
+ - test0211/test0211.dosplot.2.gnuplot
+ - test0211/test0211.dosplot.3.gnuplot
+ - test0211/test0211.dosplot.4.gnuplot
+ - test0211/test0211.dosplot.5.gnuplot
+ - test0211/test0211.dosplot.6.gnuplot
+ - test0211/test021.gnu
+
+Elastic constants calculation
+---------------------------------------------------------------------
+c11 (GPa) = 662.7438956625
+c12 (GPa) = 66.8202255080
+c44 (GPa) = 178.6738175331
+
+ c11 > abs(c12)    ? yes
+ c11 + 2 * c12 > 0 ? yes
+ c44 > 0           ? yes
+
+Res. variance (111000) = 
+Res. variance (001000) = 7.91368e-11
+Res. variance (000111) = 2.17042e-10
+
+ Fit coefficients
+ Deformation x0 c0 c1 c2 c3 c4 c5 c6 c7 c8 
+111000 |   0.0058 -1783.9656   0.0000  10.4085 -33.1650 260.0538   0.0000   0.0000   0.0000 
+001000 |   0.0069 -1783.9648   0.0000   2.8038  -9.9397 172.9478   0.0000   0.0000   0.0000 
+000111 |  -0.0002 -1783.9609   0.0000   2.4754   0.4405  -2.7022   0.0000   0.0000   0.0000 
+

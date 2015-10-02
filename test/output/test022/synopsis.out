@@ -1,0 +1,117 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test022
+pwd     : /home/alberto/cvs/runwien/test/test022
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 21:05:20 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 1
+initialization section run, time (s) = 1
+prescf section run, time (s) = 10
+scf section run, time (s) = 1972
+printrho section run, time (s) = 5
+dosplot section run, time (s) = 326
+rxplot section run, time (s) = 462
+bandplot section run, time (s) = 248
+kdos section run, time (s) = 1
+critic section run, time (s) = 13
+total run time (s) = 3039
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Zn1O1
+Mol. mass    : 81.408400
+a / bohr     : 6.14066500
+b / bohr     : 6.14066500
+c / bohr     : 9.83961500
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 120.00000000
+c/a          : 1.60236961
+c/b          : 1.60236961
+b/a          : 1.00000000
+volume/bohr^3: 321.32132439
+Mol. volume  : 160.66066220
+space group  : P63mc
+lattice      : H
+system       : hexagonal
+inversion?   : no
+structure loaded from .cif file : zno.cif
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Zn mult= 2 x= 0.33333333 y= 0.66666667 z= 0.00000000 sym= 3m1
+  atom 2 is O mult= 2 x= 0.33333333 y= 0.66666667 z= 0.34500000 sym= 3m1
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 76
+Valence electrons in unit cell   : 52
+Core electrons in unit cell      : 24
+Core | val | total e- for atom   : [O] 2 | 6 | 8
+Core | val el. conf. for atom    : [O] 1S(2) | 2S(2)2P(4)
+Core | val | total e- for atom   : [Zn] 10 | 20 | 30
+Core | val el. conf. for atom    : [Zn] 1S(2)2S(2)2P(6) | 3S(2)3P(6)3D(10)4S(2)
+Core leaking (e-) for atom 1 : [Zn] 0.00000e+00
+Core leaking (e-) for atom 2 : [O] 0.00000e+00
+Atomic energy (lstart) [Zn]      : -3592.1683760
+Atomic energy (lstart) [ O]      : -150.1168880
+Total in vacuo energy (lstart)   : -3742.2852640
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : yes
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, npt (atom 2)       : 781
+general, rmt (atom 1)       : 1.79000
+general, rmt (atom 2)       : 1.59000
+general, r0  (atom 1)       : 0.00010000
+general, r0  (atom 2)       : 0.00010000
+general, rkmax              : 8.00000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 12.000
+general, mix                : 0.20000
+general, kpts               : 1000
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -10.000
+initialization, emin / ry   : -13.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 30 -ec 0.000100 -it 
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -3742.7917935000
+E fermi /ry = 0.32138
+Mag. moment = -0.00149
+Planarity   = 0.031039
+Morse sum   = 6
+Topology    = 2[2,2](0)|2[2,2]|2[2,6]|1[2]
+
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - criticsummary.out
+ - synopsis.out
+* .index files
+ - test022.index
+* .ps files
+ - test0221/test0221.rhoplot.totalrho.ps
+ - test0221/test0221.dosplot.1dn.ps
+ - test0221/test0221.dosplot.1.ps
+ - test0221/test0221.dosplot.1up.ps
+ - test0221/test0221.spaghettidn.ps
+ - test0221/test0221.spaghettiup.ps
+ - test0221/test0221.dosband.1.eps
+ - test0221/test0221.broad.specplot.ps
+ - test0221/test0221.unbroad.specplot.ps
+* .gnuplot files
+ - test0221/test0221.rhoplot.totalrho.gnuplot
+ - test0221/test0221.dosplot.1.gnuplot
+ - test0221/test0221.rxplot.gnuplot
+

@@ -1,0 +1,159 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test009
+pwd     : /home/alberto/cvs/runwien/test/test009
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 15:06:31 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 1
+prescf section run, time (s) = 12
+scf section run, time (s) = 1155
+dosplot section run, time (s) = 65
+total run time (s) = 1233
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Cr1
+Mol. mass    : 51.996100
+a / bohr     : 4.85520300
+b / bohr     : 4.85520300
+c / bohr     : 7.92851300
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 120.00000000
+c/a          : 1.63299310
+c/b          : 1.63299310
+b/a          : 1.00000000
+volume/bohr^3: 161.85911445
+Mol. volume  : 80.92955722
+space group  : P63/mmc
+lattice      : H
+system       : hexagonal
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Cr mult= 2 x= 0.66666667 y= 0.33333333 z= 0.75000000 sym= -6m2
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 48
+Valence electrons in unit cell   : 28
+Core electrons in unit cell      : 20
+Core | val | total e- for atom   : [Cr] 10 | 14 | 24
+Core | val el. conf. for atom    : [Cr] 1S(2)2S(2)2P(6) | 3S(2)3P(6)3D(5)4S(1)
+Core leaking (e-) for atom 1 : [Cr] 0.00000e+00
+Atomic energy (lstart) [Cr]      : -2101.1354990
+Total in vacuo energy (lstart)   : -2101.1354990
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : yes
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, rmt (atom 1)       : 2.20000
+general, r0  (atom 1)       : 0.00010000
+general, rkmax              : 7.50000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 12.000
+general, mix                : 0.10000
+general, kpts               : 7000
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 100 -ec 0.000010 -it  -in1new 3 
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -2101.7437110000
+E fermi /ry = 0.75088
+Mag. moment = 0.26945
+No critic data available
+
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - synopsis.out
+* .index files
+ - test009.index
+* .ps files
+ - test0091/test0091.dosplot.10.ps
+ - test0091/test0091.dosplot.11.ps
+ - test0091/test0091.dosplot.12.ps
+ - test0091/test0091.dosplot.1.ps
+ - test0091/test0091.dosplot.2.ps
+ - test0091/test0091.dosplot.3.ps
+ - test0091/test0091.dosplot.4.ps
+ - test0091/test0091.dosplot.5.ps
+ - test0091/test0091.dosplot.6.ps
+ - test0091/test0091.dosplot.7.ps
+ - test0091/test0091.dosplot.8.ps
+ - test0091/test0091.dosplot.9.ps
+ - test0091/test0091.dosplot.join1.ps
+ - test0091/test0091.dosplot.join2.ps
+ - test0091/test0091.dosplot.join3.ps
+ - test0091/test0091.dosplot.join4.ps
+* .gnuplot files
+ - test0091/test0091.dosplot.10.gnuplot
+ - test0091/test0091.dosplot.11.gnuplot
+ - test0091/test0091.dosplot.12.gnuplot
+ - test0091/test0091.dosplot.1.gnuplot
+ - test0091/test0091.dosplot.2.gnuplot
+ - test0091/test0091.dosplot.3.gnuplot
+ - test0091/test0091.dosplot.4.gnuplot
+ - test0091/test0091.dosplot.5.gnuplot
+ - test0091/test0091.dosplot.6.gnuplot
+ - test0091/test0091.dosplot.7.gnuplot
+ - test0091/test0091.dosplot.8.gnuplot
+ - test0091/test0091.dosplot.9.gnuplot
+ - test0091/test0091.dosplot.join1.gnuplot
+ - test0091/test0091.dosplot.join2.gnuplot
+ - test0091/test0091.dosplot.join3.gnuplot
+ - test0091/test0091.dosplot.join4.gnuplot
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 23.5729961712
+metric matrix (1,2) : -11.7864980856
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 23.5729961712
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 62.8613183912
+complete basis specification for atom 1 : 
+  0.53760000 5    0   
+  0 0.53500   0.00000   CONT 1
+  0 -4.40400  0.00200   CONT 1
+  1 0.67700   0.00000   CONT 1
+  1 -2.29800  0.00000   CONT 1
+  2 0.71800   0.00000   CONT 1
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.55112 6.818  7.440  293    392    26  0.14620  -2.40395 1.79287  
+
+convergence details (DIRB angle) : 
+  ite  1     
+1      0.1   
+2      21.8  
+3      19.9  
+4      17.6  
+5      34.8  
+6      14.6  
+7      69.5  
+8      67.3  
+9      69.9  
+10     66.4  
+11     106.3 
+12     48.8  
+13     36.3  
+14     49.2  
+15     61.7  
+16     64.9  
+17     62.3  

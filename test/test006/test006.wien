@@ -1,0 +1,17 @@
+general
+  loadcif fluorite.cif
+  kpts 3000
+  rkmax 8.0
+end general
+initialization default
+prescf default
+scf
+  energy conv 0.0001
+end scf
+free 
+ atom f
+ fermi temp 0.002 
+end free
+synopsis
+ exhaustive
+end synopsis

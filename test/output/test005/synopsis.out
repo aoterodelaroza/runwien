@@ -1,0 +1,177 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test005
+pwd     : /home/alberto/cvs/runwien/test/test005
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 14:00:20 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 1
+prescf section run, time (s) = 6
+scf section run, time (s) = 24
+elastic section run, time (s) = 1318
+total run time (s) = 1349
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Be1
+Mol. mass    : 9.012182
+a / bohr     : 4.32104800
+b / bohr     : 4.32104800
+c / bohr     : 6.77145600
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 120.00000000
+c/a          : 1.56708650
+c/b          : 1.56708650
+b/a          : 1.00000000
+volume/bohr^3: 109.49413924
+Mol. volume  : 54.74706962
+space group  : P63/mmc
+lattice      : H
+system       : hexagonal
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Be mult= 2 x= 0.66666667 y= 0.33333333 z= 0.75000000 sym= -6m2
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 8
+Valence electrons in unit cell   : 8
+Core electrons in unit cell      : 0
+Core | val | total e- for atom   : [Be]  | 4 | 4
+Core | val el. conf. for atom    : [Be]  | 1S(2)2S(2)
+Core leaking (e-) for atom 1 : [Be] 0.00000e+00
+Atomic energy (lstart) [Be]      : -29.2657460
+Total in vacuo energy (lstart)   : -29.2657460
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : no
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, rmt (atom 1)       : 1.90000
+general, r0  (atom 1)       : 0.00010000
+general, rkmax              : 8.00000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 20.000
+general, mix                : 0.40000
+general, kpts               : 500
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -10.000
+initialization, emin / ry   : -13.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 50 -ec 0.000100
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -29.5393845000
+E fermi /ry = 0.50009
+No critic data available
+
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - test005-elastic/test005-111000/test0051/synopsis.out
+ - test005-elastic/test005-111000/test0052/synopsis.out
+ - test005-elastic/test005-111000/test0053/synopsis.out
+ - test005-elastic/test005-111000/test0054/synopsis.out
+ - test005-elastic/test005-111000/test0055/synopsis.out
+ - test005-elastic/test005-111000/test0056/synopsis.out
+ - test005-elastic/test005-111000/test0057/synopsis.out
+ - test005-elastic/test005-110000/test0051/synopsis.out
+ - test005-elastic/test005-110000/test0052/synopsis.out
+ - test005-elastic/test005-110000/test0053/synopsis.out
+ - test005-elastic/test005-110000/test0054/synopsis.out
+ - test005-elastic/test005-110000/test0055/synopsis.out
+ - test005-elastic/test005-110000/test0056/synopsis.out
+ - test005-elastic/test005-110000/test0057/synopsis.out
+ - test005-elastic/test005-001000/test0051/synopsis.out
+ - test005-elastic/test005-001000/test0052/synopsis.out
+ - test005-elastic/test005-001000/test0053/synopsis.out
+ - test005-elastic/test005-001000/test0054/synopsis.out
+ - test005-elastic/test005-001000/test0055/synopsis.out
+ - test005-elastic/test005-001000/test0056/synopsis.out
+ - test005-elastic/test005-001000/test0057/synopsis.out
+ - test005-elastic/test005-000110/test0051/synopsis.out
+ - test005-elastic/test005-000110/test0052/synopsis.out
+ - test005-elastic/test005-000110/test0053/synopsis.out
+ - test005-elastic/test005-000110/test0054/synopsis.out
+ - test005-elastic/test005-000110/test0055/synopsis.out
+ - test005-elastic/test005-000110/test0056/synopsis.out
+ - test005-elastic/test005-000110/test0057/synopsis.out
+ - test005-elastic/test005-000001/test0051/synopsis.out
+ - test005-elastic/test005-000001/test0052/synopsis.out
+ - test005-elastic/test005-000001/test0053/synopsis.out
+ - test005-elastic/test005-000001/test0054/synopsis.out
+ - test005-elastic/test005-000001/test0055/synopsis.out
+ - test005-elastic/test005-000001/test0056/synopsis.out
+ - test005-elastic/test005-000001/test0057/synopsis.out
+ - test005-elastic/elasticsummary.out
+ - synopsis.out
+* .index files
+ - test005.index
+* .ps files
+ - test005-elastic/fit000001.eps
+ - test005-elastic/fit000100.eps
+ - test005-elastic/fit001000.eps
+ - test005-elastic/fit110000.eps
+ - test005-elastic/fit111000.eps
+* .gnuplot files
+
+Elastic constants calculation
+---------------------------------------------------------------------
+c11 (GPa) = 319.2032943923
+c12 (GPa) = -6.3098438635
+c13 (GPa) = 7.4005750059
+c33 (GPa) = 364.1797739720
+c44 (GPa) = 179.8399856252
+
+ c11 > abs(c12)                ? yes
+ (c11 + c12) * c33 > 2 * c13^2 ? yes
+ c44 > 0                       ? yes
+
+Res. variance (111000) = 1.70899e-12
+Res. variance (110000) = 2.29622e-10
+Res. variance (001000) = 2.87122e-10
+Res. variance (000110) = 1.03551e-09
+Res. variance (000001) = 6.90339e-10
+
+ Fit coefficients (Deformation x0 c0 c1 c2 c3 c4 c5 c6 c7 c8 )
+111000 |  -0.0168 -29.5395   0.0000   0.5180  -0.9164   1.4131   0.0000   0.0000   0.0000 
+110000 |  -0.0169 -29.5395   0.0000   0.3224  -0.6406   0.7165   0.0000   0.0000   0.0000 
+001000 |  -0.0177 -29.5394   0.0000   0.1767  -0.1309  -0.1779   0.0000   0.0000   0.0000 
+000110 |  -0.0000 -29.5394   0.0000   1.3386  -0.0187  -1.5065   0.0000   0.0000   0.0000 
+000001 |  -0.5038 -29.5395   0.0000   0.6897  -1.9737   9.2612   0.0000   0.0000   0.0000 
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 18.6714558183
+metric matrix (1,2) : -9.3357279092
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 18.6714558183
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 45.8526163599
+complete basis specification for atom 1 : 
+  0.24243000 3    0   
+  0 0.05400   0.00200   CONT 0
+  0 -6.81300  0.00200   CONT 0
+  1 0.26100   0.00200   CONT 0
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.52479 8.421  7.740  811    36     2   -0.36471 -6.85297 1.98404  
+
+convergence details (DIRB angle) : 
+  ite  1     
+1      0.0   
+2      4.5   
+3      46.4  
+4      21.4  

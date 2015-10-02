@@ -1,0 +1,149 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test015
+pwd     : /home/alberto/cvs/runwien/test/test015
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 19:30:34 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 1
+prescf section run, time (s) = 13
+scf section run, time (s) = 2328
+critic section run, time (s) = 3
+total run time (s) = 2345
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Cr1
+Mol. mass    : 51.996100
+a / bohr     : 4.85520300
+b / bohr     : 4.85520300
+c / bohr     : 7.92851300
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 120.00000000
+c/a          : 1.63299310
+c/b          : 1.63299310
+b/a          : 1.00000000
+volume/bohr^3: 161.85911445
+Mol. volume  : 80.92955722
+space group  : P63/mmc
+lattice      : H
+system       : hexagonal
+inversion?   : yes
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Cr mult= 2 x= 0.66666667 y= 0.33333333 z= 0.75000000 sym= -6m2
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 48
+Valence electrons in unit cell   : 28
+Core electrons in unit cell      : 20
+Core | val | total e- for atom   : [Cr] 10 | 14 | 24
+Core | val el. conf. for atom    : [Cr] 1S(2)2S(2)2P(6) | 3S(2)3P(6)3D(5)4S(1)
+Core leaking (e-) for atom 1 : [Cr] 0.00000e+00
+Atomic energy (lstart) [Cr]      : -2101.1354990
+Total in vacuo energy (lstart)   : -2101.1354990
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : yes
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, rmt (atom 1)       : 2.41000
+general, r0  (atom 1)       : 0.00010000
+general, rkmax              : 7.50000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 12.000
+general, mix                : 0.03000
+general, kpts               : 7500
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 100 -ec 0.000010 -it  -in1new 3 
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -2101.7439285000
+E fermi /ry = 0.68242
+Mag. moment = 0.38517
+Planarity   = 0.645783
+Morse sum   = 0
+Topology    = 1[2](0)|2[6,6]|3[2,2,12]|2[2,4]
+
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - criticsummary.out
+ - synopsis.out
+* .index files
+ - test015.index
+* .ps files
+* .gnuplot files
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 23.5729961712
+metric matrix (1,2) : -11.7864980856
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 23.5729961712
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 62.8613183912
+complete basis specification for atom 1 : 
+  0.53760000 5    0   
+  0 0.53500   0.00000   CONT 1
+  0 -4.40400  0.00200   CONT 1
+  1 0.67700   0.00000   CONT 1
+  1 -2.29800  0.00000   CONT 1
+  2 0.71800   0.00000   CONT 1
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.72449 6.224  7.450  293    427    26  0.07899  -2.47421 1.80045  
+
+convergence details (DIRB angle) : 
+  ite  1     
+1      0.6   
+2      15.3  
+3      18.6  
+4      7.1   
+5      20.4  
+6      120.1 
+7      70.9  
+8      64.3  
+9      109.8 
+10     41.3  
+11     57.8  
+12     85.6  
+13     34.8  
+14     63.2  
+15     44.2  
+16     84.5  
+17     124.0 
+18     52.8  
+19     70.3  
+20     49.2  
+21     51.3  
+22     66.5  
+23     36.8  
+24     42.6  
+25     62.0  
+26     65.0  
+27     41.2  
+28     57.5  
+29     107.1 
+30     28.9  
+31     30.8  
+32     39.0  
+33     48.6  
+34     56.2  
+35     59.2  
+36     59.1  

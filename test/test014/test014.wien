@@ -1,0 +1,35 @@
+general
+  lattice B
+  equiv list Li
+    0.0 0.0 0.0
+  end equiv list
+  cell parameters 6.633 6.633 6.633 90 90 90
+  relativistic yes
+  spinpolarized yes
+  npt *   781
+  r0  *   0.00001
+  rmt *   1.5
+  mix     0.40
+  gmax    20.0
+  lmax    10
+  lnsmax  4
+  rkmax   7.5
+  kpts    7500
+end general
+initialization
+  xcpotential ggapbe96
+  lm list 1 10
+end initialization
+prescf default
+scf
+  max iterations 30
+  energy conv 0.000001
+  itdiag 4
+end  scf
+critic
+  iws 3
+  newton 1d-15
+end critic
+synopsis 
+  exhaustive
+end synopsis

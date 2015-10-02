@@ -1,0 +1,13 @@
+general
+  loadcif rutile.cif
+  rmt 1 2.0
+  rmt 2 1.6
+  rkmax 6.5
+  kpts 100
+end general
+initialization default
+prescf default
+scf default
+synopsis
+  exhaustive
+end synopsis

@@ -1,0 +1,29 @@
+general 
+  title calcium alpha
+  lattice F
+  equiv list Ca
+     0.0 0.0 0.0
+  end equiv list
+  cell parameters 10.53711292 10.53711292 10.53711292 90.0 90.0 90.0
+  rkmax 8.0
+  kpts  5000
+  rmt * -1%
+end general
+initialization
+  xcpotential ggapbe96
+end initialization
+prescf default
+scf
+  energy conv 0.00001
+end scf
+rxplot
+  atom 1
+  n 1
+  l 0
+  plotxmin -2.0
+  de 0.02
+  plotxmax 15.0
+end rxplot
+synopsis 
+  exhaustive
+end synopsis

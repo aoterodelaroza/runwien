@@ -1,0 +1,390 @@
+===========
+Runwien.awk
+===========
+:Author: Alberto Otero <alberto@carbono.quimica.uniovi.es> and Víctor Luaña <victor@carbono.quimica.uniovi.es> 
+:Version: 1.0.11
+
+.. contents::
+
+Copyright notice
+----------------
+
+Copyright (c) 2007 Alberto Otero <alberto@carbono.quimica.uinovi.es> and 
+Víctor Luaña <victor@carbono.quimica.uniovi.es>. Universidad de Oviedo.
+
+Runwien.awk is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at
+your option) any later version. 
+
+runwien.awk is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Overview
+--------
+
+Runwien.awk is a text-based interface to the WIEN2k FPLAPW
+calculation package. This work was born out of the necessity of an
+easy-to-use, powerful tool to create large series of similar
+calculations. Our primary interest was potential energy surface
+exploration and topological analysis (in the QTAIM sense) of strained 
+crystals. As a result, the main feature of runwien.awk is its ability to
+automatically generate and run extensive sets of similar
+structures and analyze the resulting data, with special emphasis in
+energetic and topological quantities. Much work has been invested in
+making runwien.awk both simple and powerful, allowing the user to
+create a host of calculations with just a few input lines, and
+rendering collection and analysis of data an easy task. Runwien.awk is
+intended to be a complement of w2web web interface, provided with
+WIEN2k package. Although runwien.awk does not allow the fine control
+w2web does, we feel it can be time-saving for the experienced WIEN2k
+user. 
+
+The main features of runwien.awk are listed below:
+
+* Runwien.awk can generate arbitrarily large sets of cases
+  which share structure (cell parameters, atomic types, positions,
+  etc.) and differ in some WIEN2k calculation parameter, such as
+  RKmax, Rmt,... The information gathered when this
+  structures (called general structures) are processed through WIEN2k
+  may be used to fine-tune the parameters which will be used in
+  further calculations (basis set, etc.). Runwien.awk will run
+  automatically all the structures in a sequence and collect the
+  information in a synopsis file.
+
+* The user can calculate a wide selection of properties on any (or
+  all) of the general structures. 
+
+* Runwien.awk provides new features to obtain properties of the
+  calculated systems which improve over the existing in WIEN2k
+  interface: elastic constants can be calculated for hexagonal
+  systems, density and potential plots can be conveniently generated
+  and taylored to the user needs, DOS plots can be arbitrarily
+  joined,... Also, in some cases (DOS, density plots,...) the gnuplot
+  scripts which generate the output are written so the user can
+  customize them to his personal needs. 
+
+* Once the desired parameters are chosen, runwien.awk can create an
+  arbitrarily large number of structures to determine the potential
+  energy surface of the system. At present, only modification of cell
+  parameters within the crystalline system are allowed, but this can
+  be attained for any crystal symmetry. This structures (termed
+  "sweep" structures) can be calculated sequentially. Most of the
+  times, however, the user will want to generate the structures and
+  calculate them in parallel (for example using a batch
+  system, etc.). The results can then be re-read into runwien.awk and
+  the data analyzed as in the one-step process. All the properties
+  which can be calculated for general structures can also be obtained
+  for sweep structures, allowing the user to explore their evolution
+  with crystal geometry.
+  
+* Runwien.awk is a robust interface. If your calculations go awry
+  (because of unexpected termination, errors in input,...), you can
+  always load the results back into runwien.awk. Runwien.awk can also
+  re-read information from existing case directories, extracting the
+  relevant values for analysis. Runwien.awk is "manual-friendly",
+  i.e., it will write most of the gnuplot and text files required for
+  plots, stdout and stderr from WIEN2k programs, etc.
+
+* Runwien.awk is error-aware. That is, if your job fails, there is a
+  possibility that runwien.awk knows what happened. Some user
+  experience (mainly from WIEN2k mailing list) has been put in error
+  checking, although it is by no means complete, so runwien.awk can
+  never be a replacement for human intervention.
+
+* Gathering and analysis of data is simplified in
+  runwien.awk. Information about calculated structures can be found on
+  "summary" files and in one global "synopsis" file (called
+  synopsis.out by default). These summary files encompass a wide
+  selection of data, collected directly from output files, such as
+  total energy, fermi energy, core/valence states, and many, many
+  more. Addition of more information to the synopsis can be done
+  easily, and probably more variables will appear in later versions of
+  runwien.awk. 
+
+* Runwien.awk is an easy-to-use, natural language interface; yet it is
+  powerful enough to generate loads of data with only some lines of
+  input. The user can rely on runwien.awk to fill up the calculation
+  parameters with sensible default values. In fact, only the
+  structural parameters (atomic positions and names, cell
+  parameters,...) are needed to initialize a case. It also allows the
+  user to load a previous .struct file and a .cif file.
+
+* Finally, runwien.awk is modular and extensible. As you can tell by
+  the '.awk' extension, runwien.awk is an AWK script, though a huge
+  one, comprising more than 12000 lines of code and more than 60
+  additional scripts, all of which sum up to some 15000 code
+  lines. Maintenance of a script this large requires the use of some
+  special programming techniques. The modularity mentioned above refers to
+  runwien.awk organization in sections, each of them independent of
+  the rest, which have precise, definite functions. For example, the
+  user may calculate the DOS of a system with dosplot section
+  (provided required sections were run) and then, calculate the band
+  structure with bandplot section, or start off a potential energy
+  surface exploration with sweep section. The modularity makes it easy
+  to add and remove features and whole sections if required with
+  minimal effort. 
+  
+Installation
+------------
+
+Installation of runwien.awk is fairly simple, as no compiling or
+linking steps are invovled in the process. The executable files of the
+runwien.awk distribution are runwien.awk (found in the root directory)
+and a bunch of script files, all with the "lapw" prefix (found under
+script/ subdir). To install runwien.awk, make runwien.awk and all the
+lapw scripts accesible through your PATH environment variable. 
+
+For example, I keep runwien.awk in my bin/ directory and the lapw
+scripts in bin/lapw/. My .bashrc file contains::
+
+	PATH=${PATH}:~/bin/:~/bin/lapw
+	export PATH
+
+The LC_NUMERIC environment variable must be set to a locale
+that accepts the '.' sign as a decimal separator (e.g. POSIX).
+
+You should check the code block 'user-defined variables' at the
+beginning of runwien.awk and tune the variables therein. These
+include::
+
+* The WIEN2k version (const_wien2k_version). If your WIEN2k version
+  does not match default (release 21.4.2008), you must edit
+  runwien.awk and change the value of the variable
+  const_wien2k_version.
+
+* Whether the keyword system is allowed (const_allow_system). By
+  default, it is not allowed.
+
+* The names of the executables runwien.awk uses (see below). These
+  include gnuplot, rename, critic (WIEN2k version), gibbs, some WIEN2k
+  executables and the runwien.awk scripts.
+
+* The names of the gnuplot scripts used by 'print' in the sweep
+  section (const_gnuplot[,,]).
+
+* The names of the data-extracting scripts writing to stdout.
+
+* The names of the summary files created by runwien.awk
+
+The executable file names can include the full path. For instance::
+
+  const_criticexe = "/home/myname/bin/critic"
+
+File names described this way need not to be in the PATH environment
+variable. 
+
+Dependencies and required programs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Runwien.awk is an interface to WIEN2k. That is, it does not perform
+any real calculation (apart from some variable housekeeping). Thus, to
+get something done you need some programs which actually do the work:
+
+* gawk (GNU Awk), version 3.1.5 or newer [gawk]_. Gawk is the awk
+  interpreter for runwien.awk. Note that runwien.awk will **not**
+  work with mawk or original awk. 
+
+* WIEN2k package [wien]_: the package of programs this interface is
+  built for. The installation process of WIEN2k is treated elsewhere
+  [wieni]_. Note that in order to run some of the tests provided with
+  runwien.awk you will have to increase LMAX2 parameter in aim,
+  dstart, lapw0 and lapw2 programs. The reason for this choice is our
+  interest in topological analysis: a higher LMAX value accounts for a
+  better representation of density inside muffin tins.
+
+* rename, by L. Wall, a perl script which renames files, modified by
+  R. Barker to check for the existence of the target files.
+
+* critic, by A. M. Pendás and V. Luaña [critic]_. Critic finds the critical
+  points of the electron density; makes plots of density, laplacian,
+  gradient lines,... and integrates basins; all the tasks which are
+  necessary for topological analysis (in the QTAIM sense). This
+  program is optional, but you will not be able to use the critic
+  section if it is not installed.
+
+* gibbs, by M. A. Blanco, E. Francisco and V. Luaña [gibbs]_. Applies the
+  quasiharmonic debye model to energy and volume static data to the
+  calculation of temperature and pressure dependence of thermodynamic
+  crystal properties. This program is optional, but you will not be
+  able to use the critic section if it is not installed.
+
+* gnuplot by T. Williams, C. Kelley and many others [gnuplot]_. A plotting
+  program.
+
+.. [gawk] http://www.gnu.org/software/gawk/gawk.html
+
+.. [wien] http://www.wien2k.at/
+
+.. [wieni] WIEN2k installation deatils are contained in the user guide,
+           which can be retrieved at http://www.wien2k.at/.
+
+.. [gibbs] Blanco, M. A. and Francisco, E. and Luaña, V., GIBBS:
+           isothermal-isobaric thermodynamics of solids from energy curves
+           using a quasi-harmonic Debye model, Comput. Phys. Commun.,
+           158 (2004) pp. 57-72.
+
+.. [gnuplot] The gnuplot plotting program can be found at
+             http://www.gnuplot.info .
+
+Support and additional programs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Some additional programs that may support your work with runwien.awk are: 
+
+* Xcrysden, by A. Kokalj et al. Xcrysden allows fast visualization of
+  WIEN2k structures (and other solid-state formats), calculation of
+  fermi surfaces, and definition of arbitrary k-paths for spaghetti
+  plots, among many other functions.
+
+* tessel, by V. Luaña. Tessel is a graphical modeller which can be
+  used to produce high quality renderings of unit cells, topological
+  basin plots and, in general, arbitrary representations in a
+  crystalline solid.
+
+.. [xcrysden] Kokalj, A.: J. Mol. Graphics Modelling, 1999, Vol. 17, 176--179.
+	      Kokalj, A.: Comput. Mater. Science, 2003, Vol. 28, 155--168.
+              Kokalj, A. and Causa, M.: Proceedings of High Performance Graphics 
+              Systems and Applications European Workshop, Bologna,
+	      Italy, 2000, 51--54.
+	      Available at http://www.xcrysden.org/
+
+
+.. [tessel] The tessel program was developed by V. Luaña, and is
+            available at http://web.uniovi.es/qcg/tessel/tessel.html
+
+
+Runwien.awk tests
+-----------------
+After the installation, you should run runwien.awk tests to check it
+is working. These tests are designed to check every section of the
+code, and to portray some of the characteristic features of
+runwien.awk. To run them, it usually suffices to cd into the test
+directory and run::
+
+	  runwien.awk testxxx.wien
+
+with and optional '>& runwien.out' to redirect the output (for more on
+how to run and use runwien.awk, see the user manual).
+
+The time required for running all the tests will vary according to
+your computer specifications and your WIEN2k installation, ranging
+from minutes to hours.  
+
+Some tests require a special way to be run. These are tests number 019
+and 020. The .wien file for these tests is split in two sections,
+labelled as 'first pass' and 'second pass'. In a first step, uncomment
+the 'first pass' section and execute runwien.awk on the test input
+file. Then, comment 'first pass' and uncomment 'second pass'. Finally,
+execute runwien.awk on the input file.
+
+Also, in addition to runwien.out and synopsis.out, some tests produce
+graphical output (.ps and .eps files) which you may also check.
+
+More information about the test files can be found in the user guide
+and in test/test.index.
+
+Known limitations and bugs
+--------------------------
+The limitations in runwien.awk correspond to our limited scope of
+usage of WIEN2k. Nevertheless, if your interests differ from ours (and
+most likely will), do not despair: they may be included in subsequent
+versions. You can even code them yourself (runwien.awk is, after all,
+an AWK script). If you make some useful modification to runwien.awk,
+we would be very grateful to hear from it, so we can maybe merge it
+with our branch.
+
+The limitations we referred above are:
+
+- There is no support for AFM calculations, FSM calculations,
+  spin-orbit interaction or orbital potentials at all. These will most
+  certainly be included in later revisions of the code, however.
+- Some of the WIEN2k interface programs are not dealt with in
+  runwien.awk, which include irrep, lapw3, lapw7, filtvec, telnes.2,
+  optimize, elast, optic, joint, kram, fsgen, and most of the
+  utility programs in the WIEN2k distribution, with the exception of
+  cif2struct. This is a result (as stated above) mainly of lack of
+  interest in these properties. Some of them (like optimize, elast,
+  dosplot,...) are superseded by the features of runwien.awk. The
+  interface for mini is severely underdeveloped as of this version. 
+
+If you find a bug in runwien.awk, please, tell us about. We will
+modify the code as soon as possible.
+
+Compatibility with different WIEN2k versions. Portability
+---------------------------------------------------------
+Runwien.awk has been checked thoroughly only for WIEN2k, with
+versions: 
+
+- WIEN2k_06.4 (Release 24/8/2006) 
+- WIEN2k_07.2 (Release 20/2/2007)
+- WIEN2k_08.2 (Release 21/4/2008)
+- WIEN2k_08.3 (Release 18/9/2008)
+
+It is likely that it will run in versions which lay in between
+these. However, if you find problems with later or previous versions,
+please, let us know about it. 
+
+By default, runwien.awk is set up for the latest compatible version we
+are using. If you have another version of WIEN2k, change the
+const_wien2k_version variable at the beginning of runwien.awk to the
+appropriate value (yyyy-mm-dd of the release)::
+
+  # wien2k version
+  const_wien2k_version = 20080918
+  # const_wien2k_version = 20080421
+  # const_wien2k_version = 20070220
+  # const_wien2k_version = 20060824
+
+Runwien.awk runs under GNU/Linux operative system. The distribution we
+used for the tests is debian (etch).
+
+Files
+-----
+We now list the files included in this pacakge and its purpose:
+
+runwien.awk 
+          Main script file.
+
+README
+          This file.
+
+user-guide.txt
+          User manual. Tutorial and reference for runwien.awk.
+
+ChangeLog
+          Log of changes to runwien.awk. It is empty in the first
+          released version.
+
+COPYING
+	  A copy of the GPLv3, the license under which runwien.awk is
+          distributed. 
+
+TODO
+          List of planned corrections and updates to runwien.awk. May
+          also list non-critical bugs.
+
+scripts/lapw\*
+	  Auxiliary scripts for runwien.awk internal use
+
+test/test.index
+	  Index of tests for runwien.awk. Tests are stored under
+          testxxx subdir in test/, where xxx is a number.
+
+test/test0\*/\*
+	  Input test files for runwien.awk and additional .cif
+	  files. Cif files were downloades from the Crystallography
+	  Open Database (COD) [cod]_. 
+
+test/output/test001/\*.out
+          Output for tests. Runwien.out stands for stdout and stderr
+          output and synopsis.out is the global summary file for the
+          calculation. 
+
+.. [cod] Crystallography Open Database, a great site for free
+         crystallographic data, http://sdpd.univ-lemans.fr/cod/ . 

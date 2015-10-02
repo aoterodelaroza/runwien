@@ -1,0 +1,50 @@
+general 
+  lattice H
+  equiv list Be
+    0.66666667 0.33333333 0.75000000
+    0.33333333 0.66666667 0.25000000
+  end equiv list
+  cell parameters 4.3210478 4.3210478 6.7714557 90 90 120
+  # careful with infinite loops
+  rmt 1        -5%/-1%/1%
+  mix          0.40
+  rkmax        7.5
+  kpts         5000
+  also
+  rmt 1        auto
+  mix          0.10,0.20,0.30,0.40
+  rkmax        7.5
+  kpts         5000
+  also
+  rmt 1        auto
+  mix          0.40
+  rkmax        7.0/8.01/0.5
+  kpts         5000
+  also
+  rmt 1        auto
+  mix          0.40
+  rkmax        7.5
+  kpts         5000,6000,7000,8000
+end general
+initialization
+  xcpotential ggapbe96
+  ecoreval -10.0
+  orbitals 1   .24243  0
+    0    0.054     0.002 CONT 0
+    0   -6.813     0.002 CONT 0
+    1    0.261     0.002 CONT 0
+  end orbitals
+  lm list 1 10
+end initialization
+prescf default
+scf
+  max iterations 50
+  energy conv 0.0001
+end scf
+critic
+  newton 1d-15
+  iws 3
+end critic
+synopsis
+ exhaustive
+end synopsis

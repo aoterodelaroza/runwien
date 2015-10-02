@@ -1,0 +1,26 @@
+## second pass
+loadcheck
+general
+  kpts 5000
+  rmt -1%
+  rkmax 7.0,7.5,8.0
+  also
+  rmt -1%
+  rkmax 7.0
+  kpts 5000,6000,7000
+  also
+  rmt -3%,-2%,-1%
+  kpts 5000
+  rkmax 7.0
+end general
+initialization default
+prescf default
+scf
+  reuse chain
+  energy conv 0.0001
+end scf
+synopsis
+ output synopsis-secondpass.out
+ exhaustive
+end synopsis
+## end second pass

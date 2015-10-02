@@ -1,0 +1,127 @@
+General information
+---------------------------------------------------------------------
+title   : runwien.awk lapw calculation, v.1.0.10
+root    : test019
+pwd     : /home/alberto/cvs/runwien/test/test019
+machine : neon.quimica.uniovi.es
+date    : mar oct  7 10:04:29 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 1
+initialization section run, time (s) = 18
+prescf section run, time (s) = 43
+scf section run, time (s) = 837
+total run time (s) = 899
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : C1
+Mol. mass    : 12.010700
+a / bohr     : 6.74025600
+b / bohr     : 6.74025600
+c / bohr     : 6.74025600
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 90.00000000
+c/a          : 1.00000000
+c/b          : 1.00000000
+b/a          : 1.00000000
+volume/bohr^3: 306.21691372
+Mol. volume  : 38.27711422
+space group  : Fd-3m
+lattice      : F
+system       : cubic
+inversion?   : no
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is C mult= 2 x= 0.12500000 y= 0.12500000 z= 0.12500000 sym= -43m
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 12
+Valence electrons in unit cell   : 8
+Core electrons in unit cell      : 4
+Core | val | total e- for atom   : [C] 2 | 4 | 6
+Core | val el. conf. for atom    : [C] 1S(2) | 2S(2)2P(2)
+Core leaking (e-) for atom 1 : [C] 8.40000e-05
+Atomic energy (lstart) [ C]      : -75.6208040
+Total in vacuo energy (lstart)   : -75.6208040
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : no
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, r0  (atom 1)       : 0.00010000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 12.000
+general, mix                : 0.20000
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 30 -ec 0.000100
+
+Calculation variable parameters
+---------------------------------------------------------------------
+number of structures : 10
+num   rmt 1 rkmax   kpts basis it. warning    energy*/ ry    efermi / ry      time /s
+1      1.45  7.50   5000   179   7      --    -76.1963105        0.85189          237 
+2      1.44  7.00   5000   179   3      --    -76.1960770        0.85279           98 
+3      1.44  7.50   5000   179   7      --    -76.1964435        0.85474          153 
+4      1.44  8.00   5000   239  11      --    -76.1966780        0.85641          204 
+5      1.44  7.00   5000   179  16      --    -76.1960760        0.85279          137 
+6      1.44  7.00   6000   179  19      --    -76.1960745        0.85279           62 
+7      1.44  7.00   7000   179  22      --    -76.1960770        0.85280           67 
+8      1.41  7.00   5000   179   4      --    -76.1963040        0.85858           71 
+9      1.42  7.00   5000   179   3      --    -76.1962030        0.85574           54 
+10     1.44  7.00   5000   179   3      --    -76.1960825        0.85298           52 
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - synopsis-firstpass.out
+ - synopsis-secondpass.out
+* .index files
+ - test019.index
+* .ps files
+* .gnuplot files
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 45.4310509455
+metric matrix (1,2) : 0.0000000000
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 45.4310509455
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 45.4310509455
+complete basis specification for atom 1 : 
+  0.30000000 3    0   
+  0 -0.78000  0.01000   CONT 1
+  0 0.30000   0.00000   CONT 1
+  1 0.30000   0.00000   CONT 1
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.08341 10.345 7.020  84     165    10  -999.00000 -0.72774 1.99869  
+  2    0.08093 9.753  6.950  84     165    10  -999.00000 -0.72681 1.99963  
+  3    0.08093 10.449 6.950  84     165    10  -999.00000 -0.72485 1.99992  
+  4    0.08093 11.146 7.920  84     165    10  -999.00000 -0.72310 1.99719  
+  5    0.08093 9.753  6.950  84     165    10  -999.00000 -0.72680 1.99963  
+  6    0.08093 9.753  6.950  84     195    10  -999.00000 -0.72681 1.99687  
+  7    0.08093 9.753  6.950  84     220    10  -999.00000 -0.72680 1.99981  
+  8    0.07612 9.954  6.810  84     165    10  -999.00000 -0.72095 1.99922  
+  9    0.07850 9.852  6.880  84     165    10  -999.00000 -0.72383 1.99651  
+  10   0.08093 9.753  6.950  84     165    10  -999.00000 -0.72662 1.99981  
+
+convergence details (DIRB angle) : 
+  ite  1     2     3     4     5     6     7     8     9     10    
+1      0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   0.0   
+2      2.4   63.2  52.0  43.5  57.4  53.2  60.1  32.8  55.4  8.3   
+3      3.2         0.1   8.1   0.9               10.8              
+4      21.4                    32.9                                
+5      8.9                                                         
+6      51.5                                                        

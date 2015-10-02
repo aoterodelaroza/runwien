@@ -1,0 +1,24 @@
+test001 -- (TiC)    WIEN2K user's guide example.
+test002 -- (Ni)     WIEN2K user's guide example.
+test003 -- (Ti02)   WIEN2K user's guide example.
+test004 -- (Be-bcc) elastic section.
+test005 -- (Be-hcp) elastic section.
+test006 -- (CaF2)   free section.
+test007 -- (Cr-hcp) printrho section.
+test008 -- (Sr-fcc) dosplot section, non-spinpolarized.
+test009 -- (Cr-hcp) dosplot section, spinpolarized.
+test010 -- (Ca-fcc) rxplot section.
+test011 -- (MgO)    bandplot section, ionic system.	
+test012 -- (Mg-hcp) bandplot section, metallic system.	
+test013 -- (Li)     aim section, only cp search.	
+test014 -- (Li)     critic section, only cp search.	
+test015 -- (Cr-hcp) critic section, only cp search.
+test016 -- (Be-hcp) sweep section.
+test017 -- (Be-bcc) gibbs section.
+test018 -- (Be-hcp) parameter optimization example.
+test019 -- (C diam) loadcheck example (general).
+test020 -- (Be-hcp) loadcheck + reread example (sweep).
+test021 -- (TiC)    Elastic constants + laplacian in a plane + kdos 
+test022 -- (ZnO)    non-centrosymmetric structure.
+test023 -- (Cr bcc) non-equivalent atoms in equivalent positions.
+test024 -- (As)     Rhombohedral As, an example of spglist

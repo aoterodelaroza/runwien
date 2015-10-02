@@ -1,0 +1,17 @@
+o [bandplot] Use gnuplot script to create plots. 
+o [bandplot] Use irrep, band character plots
+o [rx] Allow lower-level control over rx process.
+o [aim] Include interatomic surface, average property calculation, etc.
+o [sweep] Fix parameter input when given only by V in hexagonal
+o [synopsis] Add exhaustive options, categorize the synopsis.out.
+o [global] Add keyword, number, etc. tests in input
+o [elastic] Do not use sgroup on the deformation points
+o [elastic] Extend elastic to arbitrary symmetry
+o [sweep] Internal coordinates modification.
+o [global] Extended support for minimization and relaxation of internal coordinates
+o [global] AFM, FSM, orbital potentials, spin-orbit interaction, etc.
+
+* Check lda+u and spinorbit in older versions of WIEN2k
+* Automatically modify .inorb and .indm when losing symmetry in
+  spinorbit. Treat the symmetry reduction of symmetry in an
+  appropriate way.

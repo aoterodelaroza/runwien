@@ -1,0 +1,133 @@
+General information
+---------------------------------------------------------------------
+title   : periclase, bandplot
+root    : test011
+pwd     : /home/alberto/cvs/runwien/test/test011
+machine : neon.quimica.uniovi.es
+date    : lun oct  6 15:11:45 CEST 2008
+
+Sections run and time information
+---------------------------------------------------------------------
+general section run, time (s) = 0
+initialization section run, time (s) = 1
+prescf section run, time (s) = 5
+scf section run, time (s) = 186
+bandplot section run, time (s) = 6
+total run time (s) = 198
+
+Structural information
+---------------------------------------------------------------------
+Mol. formula : Mg1O1
+Mol. mass    : 40.304400
+a / bohr     : 7.95763700
+b / bohr     : 7.95763700
+c / bohr     : 7.95763700
+alpha / deg  : 90.00000000
+beta / deg   : 90.00000000
+gamma / deg  : 90.00000000
+c/a          : 1.00000000
+c/b          : 1.00000000
+b/a          : 1.00000000
+volume/bohr^3: 503.90929894
+Mol. volume  : 125.97732474
+space group  : Fm-3m
+lattice      : F
+system       : cubic
+inversion?   : no
+structure loaded from .cif file : mgo.cif
+nonequivalent atom list in .struct (and position of a representative atom):
+  atom 1 is Mg mult= 1 x= 0.00000000 y= 0.00000000 z= 0.00000000 sym= m-3m
+  atom 2 is O mult= 1 x= 0.50000000 y= 0.50000000 z= 0.50000000 sym= m-3m
+
+Additional information
+---------------------------------------------------------------------
+Number of electrons in unit cell : 20
+Valence electrons in unit cell   : 16
+Core electrons in unit cell      : 4
+Core | val | total e- for atom   : [O] 2 | 6 | 8
+Core | val el. conf. for atom    : [O] 1S(2) | 2S(2)2P(4)
+Core | val | total e- for atom   : [Mg] 2 | 10 | 12
+Core | val el. conf. for atom    : [Mg] 1S(2) | 2S(2)2P(6)3S(2)
+Core leaking (e-) for atom 1 : [Mg] 0.00000e+00
+Core leaking (e-) for atom 2 : [O] 0.00000e+00
+Atomic energy (lstart) [Mg]      : -400.5599230
+Atomic energy (lstart) [ O]      : -150.1168890
+Total in vacuo energy (lstart)   : -550.6768120
+
+Calculation fixed parameters
+---------------------------------------------------------------------
+spinpolarized               : no
+relativistic first density  : yes
+general, npt (atom 1)       : 781
+general, npt (atom 2)       : 781
+general, rmt (atom 1)       : 1.98000
+general, rmt (atom 2)       : 1.98000
+general, r0  (atom 1)       : 0.00010000
+general, r0  (atom 2)       : 0.00010000
+general, rkmax              : 8.00000
+general, lmax               : 10
+general, lnsmax             : 4
+general, gmax               : 12.000
+general, mix                : 0.20000
+general, kpts               : 5000
+initialization, potential   : ggapbe96
+initialization, ecoreval /ry: -6.000
+initialization, emin / ry   : -9.00000000
+initialization, emax / ry   : 2.00000000
+scf, commands used          :  -i 30 -ec 0.000010
+
+
+Only one structure, no variable parameters
+Energy*/ry  = -551.4306430000
+E fermi /ry = 0.28146
+No critic data available
+
+
+
+Output, index, plot and gnuplot files
+---------------------------------------------------------------------
+* .out files
+ - scfsummary.out
+ - synopsis.out
+* .index files
+ - test011.index
+* .ps files
+ - test0111/test0111.spaghetti.ps
+* .gnuplot files
+
+Exhaustive information for general structures
+---------------------------------------------------------------------
+metric matrix (1,1) : 63.3239866238
+metric matrix (1,2) : 0.0000000000
+metric matrix (1,3) : 0.0000000000
+metric matrix (2,2) : 63.3239866238
+metric matrix (2,3) : 0.0000000000
+metric matrix (3,3) : 63.3239866238
+complete basis specification for atom 1 : 
+  0.30000000 4    0   
+  0 0.30000   0.00000   CONT 1
+  0 -5.57000  0.00500   STOP 1
+  1 0.30000   0.00000   CONT 1
+  1 -3.12000  0.00500   STOP 1
+complete basis specification for atom 2 : 
+  0.30000000 3    0   
+  0 -1.55000  0.01000   CONT 1
+  0 0.30000   0.00000   CONT 1
+  1 0.30000   0.00000   CONT 1
+
+additional information :
+  num  sp. fll gmin   rkm(r) pws    k(ibz) los esmcval  bndemin  bndemax  
+  1    0.12905 8.081  7.660  128    165    13  -0.10462 -5.03267 1.87794  
+
+convergence details (DIRB angle) : 
+  ite  1     
+1      0.1   
+2      25.3  
+3      3.5   
+4      49.5  
+5      9.8   
+6      43.9  
+7      14.9  
+8      30.6  
+9      13.4  
+10     28.4  
