@@ -1,49 +1,21 @@
-===========
-Runwien.awk
-===========
-:Author: Alberto Otero <alberto@carbono.quimica.uniovi.es> and Víctor Luaña <victor@carbono.quimica.uniovi.es> 
-:Version: 1.0.11
-
-.. contents::
-
-Copyright notice
-----------------
-
-Copyright (c) 2007 Alberto Otero <alberto@carbono.quimica.uinovi.es> and 
-Víctor Luaña <victor@carbono.quimica.uniovi.es>. Universidad de Oviedo.
-
-Runwien.awk is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or (at
-your option) any later version. 
-
-runwien.awk is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
 Overview
 --------
 
-Runwien.awk is a text-based interface to the WIEN2k FPLAPW
-calculation package. This work was born out of the necessity of an
-easy-to-use, powerful tool to create large series of similar
-calculations. Our primary interest was potential energy surface
-exploration and topological analysis (in the QTAIM sense) of strained 
-crystals. As a result, the main feature of runwien.awk is its ability to
-automatically generate and run extensive sets of similar
-structures and analyze the resulting data, with special emphasis in
-energetic and topological quantities. Much work has been invested in
-making runwien.awk both simple and powerful, allowing the user to
-create a host of calculations with just a few input lines, and
-rendering collection and analysis of data an easy task. Runwien.awk is
-intended to be a complement of w2web web interface, provided with
-WIEN2k package. Although runwien.awk does not allow the fine control
-w2web does, we feel it can be time-saving for the experienced WIEN2k
-user. 
+Runwien.awk is a text-based interface to the WIEN2k FPLAPW calculation
+package. This work was born out of the necessity of an easy-to-use,
+powerful tool to create large series of similar calculations. Our
+primary interest in runwien was to calculate potential energy surfaces
+and to perform topological analysis (in the QTAIM sense) of strained
+crystals. As a result, the main feature of runwien.awk is its ability
+to automatically generate and run extensive sets of similar structures
+and analyze the resulting data, with special emphasis in energetic and
+topological quantities. Much work has been invested in making
+runwien.awk both simple and powerful, allowing the user to create a
+host of calculations with just a few input lines, and rendering
+collection and analysis of data an easy task. Runwien.awk is intended
+to be a complement of w2web web interface, provided with WIEN2k
+package. Although runwien.awk does not allow the fine control w2web
+does, we feel it can be time-saving for the experienced WIEN2k user.
 
 The main features of runwien.awk are listed below:
 
@@ -166,7 +138,7 @@ include::
   executables and the runwien.awk scripts.
 
 * The names of the gnuplot scripts used by 'print' in the sweep
-  section (const_gnuplot[,,]).
+  section (const_gnuplot).
 
 * The names of the data-extracting scripts writing to stdout.
 
@@ -186,51 +158,36 @@ Runwien.awk is an interface to WIEN2k. That is, it does not perform
 any real calculation (apart from some variable housekeeping). Thus, to
 get something done you need some programs which actually do the work:
 
-* gawk (GNU Awk), version 3.1.5 or newer [gawk]_. Gawk is the awk
+* gawk (GNU Awk), version 3.1.5 or newer. Gawk is the awk
   interpreter for runwien.awk. Note that runwien.awk will **not**
   work with mawk or original awk. 
 
-* WIEN2k package [wien]_: the package of programs this interface is
-  built for. The installation process of WIEN2k is treated elsewhere
-  [wieni]_. Note that in order to run some of the tests provided with
-  runwien.awk you will have to increase LMAX2 parameter in aim,
-  dstart, lapw0 and lapw2 programs. The reason for this choice is our
-  interest in topological analysis: a higher LMAX value accounts for a
-  better representation of density inside muffin tins.
+* WIEN2k package (http://www.wien2k.at/): the package of programs this
+  interface is built for. The installation process of WIEN2k is
+  treated elsewhere. Note that in order to run some of the tests
+  provided with runwien.awk you will have to increase LMAX2 parameter
+  in aim, dstart, lapw0 and lapw2 programs. The reason for this choice
+  is our interest in topological analysis: a higher LMAX value
+  accounts for a better representation of density inside muffin tins.
 
 * rename, by L. Wall, a perl script which renames files, modified by
   R. Barker to check for the existence of the target files.
 
-* critic, by A. M. Pendás and V. Luaña [critic]_. Critic finds the critical
+* critic, by A. M. Pendás and V. Luaña. Critic finds the critical
   points of the electron density; makes plots of density, laplacian,
   gradient lines,... and integrates basins; all the tasks which are
   necessary for topological analysis (in the QTAIM sense). This
   program is optional, but you will not be able to use the critic
   section if it is not installed.
 
-* gibbs, by M. A. Blanco, E. Francisco and V. Luaña [gibbs]_. Applies the
+* gibbs, by M. A. Blanco, E. Francisco and V. Luaña. Applies the
   quasiharmonic debye model to energy and volume static data to the
   calculation of temperature and pressure dependence of thermodynamic
   crystal properties. This program is optional, but you will not be
   able to use the critic section if it is not installed.
 
-* gnuplot by T. Williams, C. Kelley and many others [gnuplot]_. A plotting
-  program.
-
-.. [gawk] http://www.gnu.org/software/gawk/gawk.html
-
-.. [wien] http://www.wien2k.at/
-
-.. [wieni] WIEN2k installation deatils are contained in the user guide,
-           which can be retrieved at http://www.wien2k.at/.
-
-.. [gibbs] Blanco, M. A. and Francisco, E. and Luaña, V., GIBBS:
-           isothermal-isobaric thermodynamics of solids from energy curves
-           using a quasi-harmonic Debye model, Comput. Phys. Commun.,
-           158 (2004) pp. 57-72.
-
-.. [gnuplot] The gnuplot plotting program can be found at
-             http://www.gnuplot.info .
+* gnuplot by T. Williams, C. Kelley and many others. A plotting
+  program (http://www.gnuplot.info).
 
 Support and additional programs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -240,24 +197,12 @@ Some additional programs that may support your work with runwien.awk are:
 * Xcrysden, by A. Kokalj et al. Xcrysden allows fast visualization of
   WIEN2k structures (and other solid-state formats), calculation of
   fermi surfaces, and definition of arbitrary k-paths for spaghetti
-  plots, among many other functions.
+  plots, among many other functions (http://www.xcrysden.org/).
 
 * tessel, by V. Luaña. Tessel is a graphical modeller which can be
   used to produce high quality renderings of unit cells, topological
   basin plots and, in general, arbitrary representations in a
-  crystalline solid.
-
-.. [xcrysden] Kokalj, A.: J. Mol. Graphics Modelling, 1999, Vol. 17, 176--179.
-	      Kokalj, A.: Comput. Mater. Science, 2003, Vol. 28, 155--168.
-              Kokalj, A. and Causa, M.: Proceedings of High Performance Graphics 
-              Systems and Applications European Workshop, Bologna,
-	      Italy, 2000, 51--54.
-	      Available at http://www.xcrysden.org/
-
-
-.. [tessel] The tessel program was developed by V. Luaña, and is
-            available at http://web.uniovi.es/qcg/tessel/tessel.html
-
+  crystalline solid (http://azufre.quimica.uniovi.es).
 
 Runwien.awk tests
 -----------------
@@ -304,6 +249,7 @@ The limitations we referred above are:
 - There is no support for AFM calculations, FSM calculations,
   spin-orbit interaction or orbital potentials at all. These will most
   certainly be included in later revisions of the code, however.
+
 - Some of the WIEN2k interface programs are not dealt with in
   runwien.awk, which include irrep, lapw3, lapw7, filtvec, telnes.2,
   optimize, elast, optic, joint, kram, fsgen, and most of the
@@ -388,3 +334,24 @@ test/output/test001/\*.out
 
 .. [cod] Crystallography Open Database, a great site for free
          crystallographic data, http://sdpd.univ-lemans.fr/cod/ . 
+
+Copyright notice
+----------------
+
+Copyright (c) 2007-2015 Alberto Otero de la Roza
+<alberto@carbono.quimica.uinovi.es> and Víctor Luaña
+<victor@carbono.quimica.uniovi.es>. Universidad de Oviedo.
+
+Runwien.awk is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at
+your option) any later version. 
+
+runwien.awk is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
