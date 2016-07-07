@@ -2,7 +2,7 @@
 #
 # This file is part of runwien.awk
 #
-# Copyright (c) 2007 Alberto Otero <alberto@carbono.quimica.uinovi.es> and 
+# Copyright (c) 2007 Alberto Otero <aoterodelaroza@gmail.com> and 
 #  Víctor Luaña <victor@carbono.quimica.uniovi.es>. Universidad de Oviedo.
 # 
 # runwien.awk is free software: you can redistribute it and/or modify
